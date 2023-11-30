@@ -1,0 +1,31 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/1
+ * Time: 下午5:51
+ */
+.gym-date-packer{
+  width: 200px;
+  .ant-input{
+    width: 200px;
+  }
+  &-text{
+    display: inline-block;
+    text-align: center;
+    width: 10px;
+  }
+}
+
+.gym-date-month-picker{
+    width: 200px;
+    .ant-input{
+        width: 200px;
+    }
+}
+
+.gym-date-range-picker{
+    width: 200px;
+    .ant-input{
+        width: 200px;
+    }
+}

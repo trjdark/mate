@@ -1,0 +1,44 @@
+/**
+ * desc: 合同操作
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/27
+ * Time: 下午7:28
+ */
+@import "../func";
+@import "../theme";
+
+.gym-contract-operation{
+    &-items{
+        display: flex;
+        padding-left: transRem(25px);
+        z-index: 0;
+    }
+    &-item{
+        font-size: 14px;
+        border-radius: 10px 10px 0 0 ;
+        height: 40px;
+        line-height: 30px;
+        padding: transArray(5px 15px 10px 15px);
+        text-align: center;
+        background: $white;
+        margin-right: 10px;
+        border-bottom: 1px solid $borderColor;
+        color: $color666;
+        &.active{
+            background: $themeColor;
+            color: $white;
+        }
+    }
+
+    &-tab-content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+// 合同改包 select 选择框
+.gym-act-modal-form{
+    .gym-form-item-select{
+        width: 200px;
+    }
+}

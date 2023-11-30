@@ -1,0 +1,55 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2020/7/22
+ * Time: 下午3:55
+ */
+
+
+.gym-review-lesson-info{
+    &-head{
+        &-form{
+            &-row{
+                display: flex;
+                margin-bottom: 24px;
+                align-items: center;
+                &-title{
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+            &-item{
+                display: flex;
+                width: 27%;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                .ant-form-item-label{
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                &-textarea{
+                    width: 900px;
+                }
+                &.lg{
+                    .ant-form-item-label{
+                        font-size: 14px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                }
+                &.threeS{
+                    width: 18%;
+                }
+            }
+
+        }
+    }
+    &-content{
+        &-buttons{
+            text-align: center;
+        }
+    }
+}

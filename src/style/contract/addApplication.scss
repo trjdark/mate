@@ -1,0 +1,35 @@
+/**
+ * desc: 添加申请的样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/2
+ * Time: 上午10:03
+ */
+
+@import "../theme";
+@import "../func";
+
+.gym-add-application{
+  &-form{
+    display: flex;
+    flex-wrap: wrap;
+    .ant-form-item{
+      width: 33%;
+      display: flex;
+      &-label{
+        width: transRem(100px);
+      }
+    }
+    .gym-date-packer{
+      .ant-input{
+        width: 250px;
+      }
+    }
+    .ant-input-number{
+      width: 250px;
+    }
+  }
+}
+
+.gym-select-leads-modal{
+  width: transRem(1000px) !important;
+}

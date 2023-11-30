@@ -1,0 +1,39 @@
+.gym-customer-acquire {
+    .ant-table-tbody > tr{
+        cursor: pointer;
+    }
+    &-leads-info {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    & table {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &-table-view {
+        overflow: hidden;
+        border-radius: 10px;
+        & input, & .ant-select {
+            width: 200px;
+        }
+        & td:nth-child(odd) {
+            width: 150px;
+            height:40px;
+            padding-left: 30px;
+            background: #F4F8FB;
+        }
+        & td:nth-child(even){
+            padding-left:36px;
+        }
+        td {
+            border: 1px solid #EBEFF3;
+            padding: 5px 0 5px 10px;
+            textarea {
+                width: calc(100% - 30px);
+                resize: none;
+            }
+        }
+    }
+}
+

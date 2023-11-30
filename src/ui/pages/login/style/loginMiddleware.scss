@@ -1,0 +1,23 @@
+/**
+ * desc:
+ * User: Katarina.Yuan
+ * Date: 2021/12/1
+ * Time: 下午3:00
+ */
+@import "../../../../style/func.scss";
+@import "../../../../style/common.scss";
+
+.gym-login-middleware{
+    position: relative;
+    &-prc {
+        position: absolute;
+        top: transRem(100px);
+        left: 50%;
+        transform: translateX(-50%);
+        &-img{
+            display: block;
+            width: transRem(400px);
+            margin: 0 auto transRem(20px);
+        }
+    }
+}

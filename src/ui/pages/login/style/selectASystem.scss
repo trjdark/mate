@@ -1,0 +1,38 @@
+/**
+ * desc:
+ * User: Katarina.Yuan
+ * Date: 2021/12/1
+ * Time: 下午3:00
+ */
+@import "../../../../style/func.scss";
+@import "../../../../style/common.scss";
+
+.gym-select-a-system{
+    text-align: center;
+    &-title {
+        color: #ff6600;
+        font-size: transRem(24px);
+        margin-bottom: transRem(30px);
+    }
+    button{
+        color: #fff;
+        display: block;
+        width: transRem(360px);
+        height: transRem(64px);
+        font-size: transRem(18px);
+        border-radius: transRem(5px);
+        margin-bottom: transRem(30px);
+    }
+    &-tmk{
+        background-color: $themeDarkColor;
+
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: #2dccd3;
+        }
+    }
+    &-display {
+        display: none;
+    }
+}

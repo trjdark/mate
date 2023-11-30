@@ -1,0 +1,126 @@
+@import "@/style/func.scss";
+
+$wrapperHeight: transRem(230px);
+$wrapperBorderRadius: 20px;
+
+.babyInfoWrapper {
+    margin: 6px;
+    height: $wrapperHeight;
+
+    .baby-info-360 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: $wrapperBorderRadius;
+        overflow: hidden;
+    }
+
+    .infoContent {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background: url("../../../../../images/bbinfo-360.png") #fff no-repeat bottom center / contain;
+
+        .avatar {
+            width: 30%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+
+            .avatarImg {
+                height: 80px;
+                width: 80px;
+                border-radius: 40px;
+                border: 1px solid #ebeff2;
+                overflow: hidden;
+            }
+
+            .gender {
+                position: absolute;
+                bottom: -8px;
+                right: 32px;
+                font-size: 12px;
+                background-color: #009CBD;
+                color: white;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+
+        .content {
+            width: 70%;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: transRem(13px);
+
+            .phase, .yishang {
+                color: #009cbd;
+            }
+
+            .btn {
+                line-height: 1.7;
+                border-radius: 10px;
+                background-color: #009CBD;
+                padding: 3px 10px;
+                color: #fff;
+                cursor: pointer;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .bbname {
+                font-size: 20px;
+                color: black;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .status {
+            width: transRem(140px);
+
+            .statusBtnWrapper {
+                background: linear-gradient(#F3DD6D, #EF7421);
+                height: transRem(90px);
+                width: transRem(90px);
+                border-radius: transRem(45px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .statusBtnWrapperInner {
+                background-color: #fff;
+                height: transRem(78px);
+                width: transRem(78px);
+                border-radius: transRem(39px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .status {
+                    color: #009CBD;
+                    font-size: transRem(14px);
+                    margin-bottom: transRem(5px);
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .imgWrapper {
+        height: transRem(45px);
+        overflow: hidden;
+        background-color: #fff;
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

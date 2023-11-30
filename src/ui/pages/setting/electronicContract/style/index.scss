@@ -1,0 +1,53 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2021/9/8
+ * Time: 下午2:40
+ */
+.gym-electronic-contract{
+    &-list{
+
+    }
+    &-add{
+        &-button{
+            cursor: pointer;
+            width: 300px;
+            position:relative;
+            height:40px;
+            line-height:35px;
+            background: #fff;
+            color: #000;
+            border: 1px solid #009cbd;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height:40px;
+            border-radius:20px;
+        }
+        .gym-center-add{
+            position:relative;
+            height:40px;
+            line-height:35px;
+            background: #fff;
+            color: #000;
+            border: 1px solid #009cbd;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &-icon{
+                position:absolute;
+                right:10px;
+                top:0;
+                z-index:2;
+                cursor:pointer;
+            }
+            &-plus{
+                height:40px;
+                border-radius:20px;
+            }
+        }
+    }
+
+}

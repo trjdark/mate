@@ -1,0 +1,150 @@
+/**
+ * desc: 随堂反馈测评
+ * User: Vicky.Yu
+ * Date: 2020/9/27
+ * Time: 18:30
+ */
+.gym-feed-back-evaluate{
+  &-content{
+    &-form{
+      .gym-feedBack-done-img{
+        width: 29px;
+        height: 29px;
+        position: absolute;
+        right: 0;
+      }
+
+      &-every{
+        &-one{
+          padding: 14px 0;
+          background: #E9F6F7;
+          border-radius: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          &-info{
+            width: 25%;
+            span:nth-child(1){
+              width: 3rem;
+              display: inline-block;
+              text-align: right;
+            }
+            span:nth-child(2){
+              color: #009CBD;
+            }
+          }
+        }
+        .title{
+          padding-top: 32px;
+        }
+        &-two{
+          &-photo{
+            margin-left: 25px;
+          }
+
+        }
+        &-three{
+          &-tools{
+            .ability-con{
+              margin-top: 25px;
+            }
+            .tools-name{
+              margin-left: 25px;
+              color: #000000;
+              font-weight: bold;
+              &::before {
+                  margin-right: 4px;
+                  content: "*";
+                  font-family: SimSun;
+                  line-height: 1;
+                  font-size: 14px;
+                  color: #f5222d;
+              }
+            }
+            .tools-name-con{
+              color: #333;
+              margin-left: 5px;
+            }
+          }
+        }
+        &-four{
+          &-all{
+            border: 1px solid #CDCDCD;
+            border-radius: 5px;
+            border-bottom: none;
+            color: #009CBD;
+            &-ability{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #CDCDCD;
+                text-align: center;
+                padding: 13px 0;
+                &-num{
+                    border-right: 1px solid #CDCDCD;
+                    width: 5%;
+                    padding: 13px 0;
+                }
+                &-con{
+                    width: 95%;
+                    text-align: left;
+                    margin-left: 15px;
+                }
+            }
+          }
+
+
+        }
+        &-five{
+
+        }
+        &-six{
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+}
+.feed-black {
+    color: #000;
+}
+.ant-tabs.ant-tabs-card>.ant-tabs-bar {
+    margin-bottom: 0px;
+    margin-left: 45px;
+    margin-right: 45px;
+    position: relative;
+    z-index: 0;
+
+    .ant-tabs-tab {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-right: 10px;
+        .font-bold{
+          span:nth-child(1){
+            font-weight: bold;
+            color: #009CBD;
+          }
+        }
+    }
+
+    .ant-tabs-tab-active {
+        background-color: #009CBD;
+        color: white;
+        .font-bold {
+            span:nth-child(1) {
+                font-weight: bold;
+                color: #FFF;
+            }
+        }
+
+        .ant-tabs-close-x {
+            position: relative;
+            left: 4px;
+
+            svg {
+                background-color: white;
+                color: #009cbd;
+            }
+        }
+    }
+}

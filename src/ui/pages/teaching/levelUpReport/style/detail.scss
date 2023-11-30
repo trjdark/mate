@@ -1,0 +1,110 @@
+/**
+ * desc: 升班报告详情样式
+ * User: katarina.yuan
+ * Date: 2021/8/3
+ * Time: 上午10:00
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/common";
+.gym-promotion-detail{
+    &-head {
+        margin-bottom: 18px;
+        text-align: center;
+        &-title {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+    }
+    &-info{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 26px;
+        &-item{
+            width: 33.33%;
+            &-label{
+                display: inline-block;
+                width: 160px;
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            &-content{
+                color: $themeColor;
+            }
+        }
+    }
+    &-chart {
+        width: 1000px;
+        position: relative;
+            left: 50%;
+        transform: translateX(-50%);
+    }
+    &-center {
+        text-align: center;
+    }
+    &-table{
+        &:first-child{
+            .gym-promotion-detail-table-head{
+                border-radius: 5px 5px 0 0;
+            }
+        }
+        &-head {
+            padding: 10px 0;
+            color: #FFF;
+            display: flex;
+            justify-content: space-around;
+            &-title {
+                width: 10%;
+                text-align: center;
+            }
+            &-item {
+                flex: 1;
+            }
+            &-dark {
+                background: $themeDarkColor;
+            }
+            &-blue {
+                background: $themeColor;
+            }
+            &-wBlue {
+                background: $themeLightColor;
+            }
+        }
+        &-project {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid $themeColor;
+            border-top: none;
+            &-title {
+                width: 10%;
+                text-align: center;
+                padding: 10px 6px;
+                align-self: center;
+                color: $themeColor;
+            }
+            &-item{
+                flex: 1;
+                border-left: 1px solid $themeColor;
+                padding: 10px 6px;
+            }
+        }
+    }
+    &-left-btn {
+        position: relative;
+        &-point {
+            position: absolute;
+            top: 20px;
+        }
+    }
+    &-btn {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        &-toApp {
+            margin: 0 20px;
+        }
+    }
+    &-text {
+        margin-top: 10px;
+    }
+}

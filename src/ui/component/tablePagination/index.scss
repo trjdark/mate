@@ -1,0 +1,118 @@
+@import "../../../style/theme";
+@import "../../../style/func";
+
+// 表格部分间距
+.tableTr{
+    padding:  transArray(0 10px);
+    height: transRem(32px);
+}
+
+.gym-table-wrap {
+    border: 1px solid #f0f3f2;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .gym-table-wrap-contract {
+        overflow: -webkit-paged-x;
+    }
+
+    .gym-table-component{
+        font-size: 12px;
+        .ant-table-body{
+            border-radius: 0;
+            border: none;
+        }
+        .ant-table-thead{
+            &>tr>th{
+                @extend .tableTr;
+                font-size: 12px;
+            }
+            &>tr>th:first-child{
+                padding-left: 30px;
+            }
+            &>tr>th:last-child{
+            }
+        }
+        .ant-table-tbody{
+            &>tr>td{
+                font-size: 12px;
+                @extend .tableTr;
+                box-sizing: border-box;
+            }
+            &>tr>td:first-child{
+                padding-left: 30px;
+            }
+        }
+
+    }
+
+    .ant-table-small {
+        border: none;
+        th {
+            background-color: rgb(236, 239, 242) !important;
+        }
+
+        .ant-table-body {
+            margin: 0;
+        }
+    }
+
+    .gym-page-content {
+        padding:25px 20px;
+    }
+
+    .ant-table-content {
+      margin-bottom: -1px;
+    }
+}
+
+.gym-table-component{
+    .ant-table-body{
+        border: 1px solid #f0f3f2;
+        overflow: hidden;
+        border-bottom: none;
+        >table {
+          margin-bottom: 0;
+        }
+    }
+    .ant-table-tbody, .ant-table-thead{
+        font-size: 12px;
+    }
+    .ant-table-thead{
+        &>tr>th{
+            @extend .tableTr;
+            background: #ebf1f2;
+        }
+        &>tr>th:first-child{
+          padding-left: 30px;
+        }
+    }
+
+    .ant-table-tbody{
+        &>tr>td{
+            @extend .tableTr;
+            box-sizing: border-box;
+            word-break: break-all;
+        }
+        &>tr>td:first-child{
+          padding-left: 30px;
+        }
+    }
+
+
+    .gym-contract-info-wrap-content-no-data{
+        border:none;
+    }
+    .ant-table-placeholder{
+        border-bottom:none;
+    }
+    &-no-data{
+        border: 1px solid #f0f3f2;
+        border-radius:10px;
+        div.ant-table-body{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border:none;
+        }
+    }
+}

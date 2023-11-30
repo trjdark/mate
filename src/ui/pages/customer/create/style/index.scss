@@ -1,0 +1,73 @@
+@import "@/style/func.scss";
+
+// 住址信息、leads信息、家长问卷的表单wrapper样式
+.gym-customer-create-step-wrapper {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: transRem(30px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 3px rgba(56,91,99,0.1);
+
+    .formWrapper {
+        flex: 1;
+    }
+}
+
+.step-buttons {
+    margin-top: 40px;
+    .prevStep {
+        margin-right: 20px;
+        height: 40px;
+        border-radius: 20px;
+        width: 120px;
+    }
+    .nextStep {
+      height: 40px;
+      border-radius: 20px;
+      width: 120px;
+    }
+}
+.cWarning{
+    color:red;
+}
+.cellphoneCheckStr {
+  color: red;
+  margin-bottom: 24px;
+  line-height: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.crossCenterSearch {
+  .ant-modal-body {
+    padding: 15px;
+    padding-top: 0px;
+  }
+  .gym-page-title {
+    padding: 0px;
+  }
+  .ant-modal-header {
+    padding: 30px 25px;
+  }
+}
+
+.err-detail{
+    margin-top:70px;
+    &>li{
+        text-align: center;
+    }
+    &-tabname{
+        display: inline-block;
+        width:100px;
+        text-align:right;
+    }
+    &-msg{
+        width: 130px;
+        display: inline-block;
+        text-align: left;
+    }
+}
+

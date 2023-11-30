@@ -1,0 +1,244 @@
+/**
+ * desc: 顶部导航栏样式
+ * User:
+ * Date: 2018/8/3
+ * Time: 下午2:02
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+@import 'layout';
+
+$headerHeight: transRem(50px);
+$headerBg: #2c3952;
+$utilsSize: transRem(64px);
+
+//顶部搜索dropdown样式
+.gym-layout-search-type{
+    & li:hover{
+        background:#fff;
+        cursor: default;
+    }
+    .gym-button-grey-xs.active{
+        border: 1px solid #009cbd;
+        color: #009cbd;
+    }
+}
+.gym-layout-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: $headerHeight;
+  line-height:$headerHeight;
+  background: $headerBg;
+  color:#fff;
+
+  .ant-select-selection{
+    color:#fff;
+    background:transparent;
+    border:none;
+  }
+  .ant-select-arrow{
+    color:white;
+  }
+  &-mid{
+    display: flex;
+  }
+  &-left{
+    display: flex;
+    justify-content: center;
+    width: $siderWidth;
+    &-item{
+      display: flex;
+      align-items: center;
+      &-logo{
+        width: 100%;
+      }
+    }
+  }
+  &-right{
+    display: flex;
+    min-width: transRem(100px);
+    &-item{
+      display: flex;
+      align-items: center;
+      &:hover{
+          color:$themeColor;
+      }
+      &-logo{
+        width: 100%;
+      }
+      &.center-search{
+        .ant-select{
+          width: transRem(260px);
+        }
+      }
+      &.pointer{
+        padding: transArray(0 15px);
+        text-align: center;
+      }
+      &.utils{
+        padding: transArray(0 15px);
+        width: transRem(180px);
+        text-align: center;
+      }
+      &.active{
+        background: #1C2842;
+        color: #009CBD;
+      }
+    }
+  }
+
+  &-icon{
+    font-size: transRem(20px);
+    margin-right: transRem(5px);
+  }
+  a {
+    color:#fff;
+  }
+}
+
+/*InputSearch 样式*/
+.gym-search-input-wrap{
+  display:flex;
+  height:transRem(30px);
+  line-height:transRem(30px);
+  color:white;
+  border-radius:transRem(15px);
+}
+
+.gym-layout-operation{
+  width:transRem(120px);
+  &-item{
+    height: transRem(40px);
+    line-height: transRem(40px);
+    padding: transArray(0 15px);
+    cursor: pointer;
+
+    &:hover{
+      background:#e3f9ff;
+    }
+    &-icon{
+      margin-right: transRem(7px);
+    }
+    &.utils{
+        padding: transArray(0 0 0 15px);
+    }
+    &-box{
+      padding: transRem(10px);
+      text-align: center;
+    }
+    &-box-border{
+      width: transRem(70px);
+      height: transRem(70px);
+      line-height: transRem(60px);
+      border: 1px solid $colorDDD;
+      text-align: center;
+      font-size: transRem(30px);
+    }
+  }
+  &-uitls{
+    .ant-dropdown-menu-item:not(:last-child){
+        border-bottom: 1px solid $colorDDD;
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+      &-icon{
+        width: $utilsSize;
+        height: $utilsSize;
+        margin: transRem(5px);
+        &-img{
+          width: 100%;
+        }
+        &-modal-img{
+          width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &-coming{
+            width: $utilsSize;
+            height:$utilsSize;
+            border: 1px solid $colorDDD;
+            text-align: center;
+            line-height: transRem(64px);
+        }
+      }
+      &-text{
+        width: transRem(210px);
+        &-title{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: transRem(14px);
+          margin-bottom: transRem(5px);
+          color:#000;
+          &-link{
+              width: 80px;
+              height: 24px;
+              border-radius: 15px;
+              font-size: 12px;
+              padding: 0;
+          }
+        }
+        &-content{
+          font-size: transRem(12px);
+          white-space: normal;
+          line-height: transRem(15px);
+          color:$color666;
+        }
+      }
+    }
+  }
+  &-message{
+    width: transRem(350px);
+    max-height: transRem(450px);
+    overflow-y: auto;
+    &-item{
+      border-bottom: 1px solid $borderColor;
+      &:last-child{
+        border-bottom: none;
+      }
+      &-title{
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+      }
+      &-content{
+        font-size: 12px;
+        white-space: break-spaces;
+      }
+    }
+  }
+}
+
+.ant-popover-inner-content{
+  padding:0;
+}
+
+.gym-layout-header-right-item.pointer {
+  width:auto;
+  min-width: transRem(100px);
+}
+
+/*金宝牵牵样式*/
+.gym-qianqian-title{
+    &:hover{
+        color:#009cbd;
+    }
+}
+.gym-qianqian-code{
+    .ant-dropdown-menu{
+        left:-10px;
+    }
+    .ant-dropdown-menu-item{
+        padding:5px;
+        &:hover{
+            background: white;
+        }
+    }
+    p{
+        font-size:12px;
+    }
+}
+

@@ -1,0 +1,171 @@
+/**
+ * desc: 合同详情
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/5
+ * Time: 上午11:18
+ */
+@import "../func";
+@import "../theme";
+
+.gym-contract-info{
+    &-nav{
+        height: 60px;
+        line-height: 60px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid $colorDDD;
+    &-item{
+        cursor: pointer;
+        padding: transArray(0 5px);
+        height: 60px;
+        line-height: 60px;
+        width: transRem(120px);
+        text-align: center;
+        font-size: transRem(14px);
+        &.active{
+            color: $themeColor;
+            border-bottom: 4px solid $themeColor;
+        }
+    }
+    &-cancel{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: transArray(0 20px);
+        border-left: 1px solid $colorDDD;
+        vertical-align: middle;
+        &-button{
+            cursor: pointer;
+            border: none;
+            background: $error;
+            color: $white;
+            width: transRem(110px);
+            height: transRem(24px);
+            line-height: transRem(24px);
+            font-size: transRem(14px);
+            border-radius: transRem(22px);
+        }
+    }
+}
+
+  &-wrap{
+      padding: transArray(0 15px);
+
+      &-title{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &-button{
+              display: inline-block;
+              font-size: transRem(14px);
+              text-align: center;
+              line-height: 30px;
+          }
+      }
+      &-content{
+          &-no-data{
+              height: transRem(140px);
+              width: 100%;
+              border-radius: $borderRadius;
+              border: 1px solid $borderColor;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $color999;
+          }
+
+          &-no-data-img{
+              opacity:0.3;
+          }
+
+          &-no-data-text{
+              margin-left: 10px;
+          }
+      }
+    &.extension{
+      height: transRem(600px);
+    }
+  }
+
+    &-usage-table-column {
+        background-color: #F4F8FB;
+        width: 160px;
+        padding: 10px 0 10px 30px;
+    }
+
+    &-usage-table-column-value {
+        padding: 10px 0 10px 36px !important;
+    }
+}
+
+.gym-table-no-page {
+    .ant-table-placeholder {
+        border-bottom: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .gym-contract-info{
+        &-noneContent{
+            &-no-data{
+                height: transRem(140px);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color999;
+            }
+
+            &-no-data-img{
+                opacity:0.3;
+            }
+
+            &-no-data-text{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .gym-table-wrap {
+        padding: 0;
+    }
+    .gym-page-content {
+        padding: 0;
+    }
+
+    .ant-table-content {
+        margin-bottom: 0;
+        border-bottom: none;
+
+        .ant-table-tbody{
+            .ant-table-row:last-child > td{
+                border-bottom: none;
+            }
+
+            .ant-table-row:last-child > td:first-child{
+                border-bottom-left-radius: 10px;
+            }
+            .ant-table-row:last-child > td:last-child{
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+
+}
+
+.gym-contract-usage {
+    &-table {
+        .gym-table-component .ant-table-tbody > tr:last-child > td{
+            background-color: #ededed !important;
+        }
+    }
+}
+
+.gym-no-bottom {
+    border-bottom: none;
+
+    .ant-table-content {
+        margin-bottom: 0;
+    }
+}

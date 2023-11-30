@@ -1,0 +1,55 @@
+@import "@/style/func.scss";
+
+$wrapperHeight: transRem(230px);
+$wrapperBorderRadius: 20px;
+$wrapperBorderColor: #EBEFF2;
+
+.essentialInfoWrapper {
+    height: $wrapperHeight;
+    border: 1px solid $wrapperBorderColor;
+    border-radius: 20px;
+    margin: 6px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .rowInfo {
+        padding: transRem(2px) 0;
+        font-size: transRem(14px);
+        color: #666666;
+        display: flex;
+        align-items: center;
+        .key {
+            color: black;
+        }
+
+        .highlight {
+            color: #009cbd;
+        }
+
+        .gym-button-xxs {
+            margin-left: transRem(10px);
+        }
+
+        &.btnWrap {
+            text-align: center;
+        }
+
+        .btn {
+            line-height: 1.5;
+            border-radius: transRem(10px);
+            background-color: #009CBD;
+            padding: 0 transRem(10px);
+            color: #fff;
+            cursor: pointer;
+            margin-left: transRem(10px);
+            font-size: transRem(12px);
+        }
+    }
+
+    .info-content {
+        flex: 1;
+        padding-left: transRem(5px);
+    }
+}

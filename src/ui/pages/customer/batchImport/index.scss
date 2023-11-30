@@ -1,0 +1,89 @@
+@import "@/style/func.scss";
+
+#gym-customer-batch-import {
+    min-height: 560px;
+
+    .col-right {
+        display: flex;
+    }
+    .col-left {
+        padding-left: 30px;
+        width: 160px;
+    }
+    .import-btn {
+        margin-left: 20px;
+    }
+    .btn-auto {
+      width: auto;
+      min-width: 80px;
+    }
+
+    .col-padding {
+      padding: 0 10px;
+        .download {
+            color: #009CBD;
+            cursor: pointer;
+            text-decoration: underline ;
+        }
+    }
+
+    .row-download {
+      padding-left: 170px;
+      .no-template {
+          margin-top: 24px;
+          font-size: 12px;
+          color: #666666;
+          .download {
+              color: #009CBD;
+              cursor: pointer;
+          }
+      }
+      .limits {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+
+
+    .importRes {
+        margin-top: 26px;
+        margin-bottom: 10px;
+        background:rgba(0,156,189,.1);
+        height: 40px;
+        border-radius: 10px;
+        .importResTitle {
+            text-align: center;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .success-col {
+          display: flex;
+          align-items: center;
+          width: 160px;
+        }
+    }
+
+    .iconError {
+      padding-left: 30px;
+      font-size: 24px;
+      color: red;
+      padding-right: 10px;
+    }
+
+    .iconSuccess {
+      padding-left: 30px;
+      font-size: 24px;
+      color: #40ceac;
+      padding-right: 10px;
+    }
+}
+.gym-customer-batch-import-analysis-excel{
+    display:inline-block;
+    width: 105px;
+    overflow: hidden;
+    height: 30px;
+    button{
+        letter-spacing:5px;
+        text-indent: 5px;
+    }
+}

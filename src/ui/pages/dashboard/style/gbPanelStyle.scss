@@ -1,0 +1,77 @@
+@import "../../../../style/func.scss";
+@import "../../../../style/common.scss";
+
+.gym-dashboard {
+    &-gb-card-panel {
+        position: relative;
+        display: flex;
+        height: transRem(100px);
+        color: #000;
+        font-size: transRem(28px);
+        box-sizing: border-box;
+
+        &-explainLink {
+            width  : 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        &.page-wrap {
+            padding: transRem(18px) 0 0 transRem(36px);
+        }
+        &-item {
+            flex: 1;
+            &-title {
+                font-size: transRem(14px);
+                color: #999;
+                &-red {
+                    color: red;
+                    font-weight: 700;
+                }
+                &-icon {
+                    margin-left: transRem(5px);
+                    font-size  : transRem(14px);
+                }
+                &.second {
+                    color: #333;
+                }
+            }
+        }
+        &.second {
+            height: transRem(68px);
+            font-size: transRem(24px);
+            &.page-wrap {
+                padding: transRem(8px) 0 0 transRem(36px);
+            }
+        }
+        &-table {
+            margin: 0 16px;
+            font-size: transRem(20px);
+            color: #ff6600;
+            td:first-child {
+                background-color: #f4f8fb;
+            }
+            .ant-table-tbody,.ant-table-thead{
+                font-size: transRem(12px);
+            }
+            .ant-table-thead{
+                &>tr>th{
+                    background: #ebeff3;
+                }
+                &>tr>th:nth-child(2){
+                    padding-left: transRem(54px);
+                }
+                font-size: transRem(16px);
+            }
+            .ant-table-tbody {
+                &>tr>td:nth-child(2){
+                    padding-left: transRem(54px);
+                }
+                font-size: transRem(16px);
+            }
+            &-leads {
+                margin-top: transRem(30px);
+            }
+        }
+    }
+}

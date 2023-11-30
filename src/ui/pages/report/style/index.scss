@@ -1,0 +1,402 @@
+/**
+ * desc: 中心业绩报表样式
+ * User: Lyon.li@gymboglobal.com
+ * Date: 2019/1/10
+ * Time: 上午10:38
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+.gym {
+    &-panel-header {
+        overflow: hidden;
+
+        >p {
+            &:first-child {
+                float: left;
+            }
+
+            &:last-child {
+                float      : right;
+                font-size  : 12px;
+                line-height: 18px;
+                color      : #666666;
+            }
+        }
+    }
+
+    &-report {
+        &-wrap {
+            &.page-wrap {
+                padding-top: 30px;
+            }
+
+            .ant-collapse {
+                border-radius: 10px;
+                overflow     : hidden;
+                border       : none;
+
+                &>.ant-collapse-item {
+                    border-bottom: none;
+
+                    &>.ant-collapse-header {
+                        padding         : 12px 16px 12px 30px;
+                        color           : #333;
+                        font-size       : 18px;
+                        font-weight     : normal;
+                        background-color: #ebeff3;
+
+                        .anticon {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child>.ant-collapse-header {
+                        border-radius: 0;
+                    }
+                }
+
+                .ant-collapse-item:last-child>.ant-collapse-content {
+                    border-top: none;
+                }
+
+                .ant-collapse-content-box {
+                    padding: 0;
+                }
+            }
+
+            .ant-table-bordered .ant-table-tbody .no-hover-background {
+                td {
+                    background-color: transparent;
+                }
+            }
+
+            .ant-table-bordered .ant-table-header>table {
+                border: none;
+            }
+        }
+
+        &-form {
+            width          : 100%;
+            border-collapse: separate;
+            border-spacing : 0;
+
+            tr {
+                &:last-child td {
+                    &:first-child {
+                        border-bottom-left-radius: 8px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 8px;
+                    }
+                }
+            }
+
+            td {
+                border-right : 1px solid #ebeff2;
+                border-bottom: 1px solid #ebeff2;
+                font-size    : 14px;
+                height       : 40px;
+
+                &:first-child {
+                    border-left     : 1px solid #ebeff2;
+                    padding-left    : 30px;
+                    background-color: #F4F8FB;
+                }
+            }
+        }
+
+        &-space-mark {
+            margin: 0 transRem(5px);
+        }
+
+        &-content {
+            &-wrap {
+                min-height: 100%;
+                padding   : 3px 36px;
+                box-sizing: border-box;
+                overflow-y: auto;
+
+                .ant-checkbox-group-item {
+                    margin: 3px 0;
+                }
+
+                .ant-checkbox-group {
+                    display: block !important;
+                }
+
+                &-select {
+                    width: 100%;
+                }
+            }
+
+            &-citys {
+                max-height: 6.5em;
+
+                .ant-checkbox+span {
+                    display  : inline-block;
+                    min-width: 6.5em;
+                }
+            }
+
+            &-centers {
+                max-height: 6.5em;
+            }
+
+            &-datas {
+                max-height: 8.5em;
+
+                .ant-checkbox+span {
+                    display  : inline-block;
+                    min-width: 12em;
+                }
+            }
+
+            &-remark {
+                resize: none;
+            }
+        }
+
+        &-search {
+            margin    : 30px auto 15px;
+            text-align: center;
+
+            button {
+                cursor: pointer;
+            }
+        }
+
+        &-result {
+            &-title {
+                padding      : 0;
+                margin-left  : 10px;
+                margin-bottom: 20px;
+            }
+
+            &-export {
+                margin  : 0 0 20px 30px;
+                overflow: hidden;
+                display : flex;
+
+                >div {
+                    height: 39px;
+                    flex  : 1;
+                }
+
+                >span {
+                    margin-right: 30px;
+                    color       : #009cbd;
+                    line-height : 39px;
+                }
+            }
+
+            &-content {
+                border-radius: transRem(12px);
+                overflow     : hidden;
+                border       : 1px solid #e8e8e8;
+                margin       : -1px;
+
+                .gym-table-component-no-data {
+                    border: none;
+                }
+
+                .ant-table-thead>tr>th {
+                    background-color: #ebeff3;
+                    border          : none;
+                    text-align      : center;
+                }
+
+                .ant-table-body tr>td {
+                    text-align: center;
+                }
+
+                .ant-table-content {
+                    border-right           : 1px solid #e8e8e8;
+                    border-left            : 1px solid #e8e8e8;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius : 10px;
+                }
+
+                .gym-table-component {
+                    .ant-table-thead>tr>th:first-child {
+                        padding-left: 0;
+                    }
+
+                    .ant-table-header {
+                        background-color: #ebeff3;
+                    }
+
+                    .ant-table-tbody>tr>td {
+                        padding   : 0 transRem(5px);
+                        text-align: center;
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                .ant-table-bordered {
+                    .ant-table-body {
+                        border: none;
+                    }
+
+                    .ant-table-fixed-left table,
+                    .ant-table-body>table {
+                        border: none;
+                    }
+
+                    .ant-table-fixed-left {
+                        border-left: 1px solid #e8e8e8;
+
+                        .ant-table-thead>tr>th:last-child {
+                            border-top-right-radius: 0;
+                        }
+                    }
+
+                    .ant-table-tbody>tr>td:last-child {
+                        border-right: none;
+                    }
+
+                    &.ant-table-empty .ant-table-placeholder {
+                        border-right : none;
+                        border-left  : none;
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                }
+            }
+
+            &-remark {
+                cursor: pointer;
+
+                &-icon {
+                    color      : #999;
+                    margin-left: transRem(5px);
+                    font-size  : transRem(12px);
+                }
+            }
+        }
+
+        &-fullscreen {
+            position        : relative;
+            background-color: #fff;
+            overflow        : hidden;
+
+            &-active {
+                position  : fixed;
+                left      : 0;
+                right     : 0;
+                top       : 0;
+                bottom    : 0;
+                z-index   : 10;
+                padding   : 30px transRem(15px) transRem(15px);
+                overflow-y: auto;
+
+                &>.gym-report-result-content {
+                    .ant-table-fixed-left {
+                        border-left: none;
+                    }
+
+                    .ant-table-content {
+                        border-right: none;
+                    }
+                }
+
+                .ant-table-fixed-left {
+                    border-radius: transRem(10px) 0 0 0;
+                }
+            }
+
+            &-switch-btn {
+                margin-left   : 15px;
+                vertical-align: middle;
+
+                &>span {
+                    margin-left: 3px;
+                }
+            }
+
+            &-tips {
+                margin-right : 30px;
+                margin-bottom: 10px;
+                margin-top   : -25px;
+                text-align   : right;
+            }
+
+            .gym-look-detail {}
+        }
+
+        &-multicenterexport {
+            &-button {
+                position: absolute;
+                z-index : 1;
+                width   : 48%;
+                left    : 330px;
+                display : flex;
+
+                .desc {
+                    font-size    : 14px;
+                    margin-left  : 12px;
+                    line-height  : 30px;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color      : red;
+                }
+            }
+
+            &-listModal {
+
+                &-checkbox {
+                    min-width    : 1000px;
+                    margin-bottom: 20px;
+
+                    &-group {
+                        display   : flex;
+                        flex-wrap : wrap;
+                        width     : 100%;
+                        max-height: 400px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+
+                        &-lable {
+                            width    : 246px;
+                            font-size: 14px;
+
+                        }
+                    }
+
+                    .ant-checkbox-wrapper {
+                        margin: 6px 0;
+                    }
+                }
+
+                .ant-modal-content {
+                    .ant-modal-body {
+                        padding: 18px 0px 0px 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gym-consumer-statistics.page-wrap {
+    position: relative;
+    z-index : 20;
+}
+
+.gym-report-advance-payment {
+    &-desc {
+        padding: transRem(5px);
+        //width  : transRem(120px);
+        word-break: break-all;
+    }
+
+    &-icon {
+        font-size   : 12px;
+        margin-right: transRem(2px);
+        color       : $themeColor;
+    }
+}

@@ -1,0 +1,59 @@
+/**
+ * desc: 函数
+ * Date: 2018/8/3
+ * Time: 下午2:23
+ */
+
+
+
+//定义不同分辨率对应大小
+$devicePix2048: 40px;
+$devicePix1920:38px;
+$devicePix1680:34px;
+$devicePix1366:30px;
+$devicePix1280:26px;
+
+@function transRem($px){
+  @if(unit($px) == "px") {
+    @return ($px / $devicePix1366 ) * 1rem
+  }@else{
+    @return $px;
+  }
+}
+
+@function isNotNull($params){
+  @if($params){
+    @if($params==""){
+      @return false;
+    }@else {
+      @return true;
+    }
+  }@else {
+    @return false;
+  }
+}
+
+@function transArray($array){
+  @if(isNotNull($array)){
+    @if(length($array)==1){
+      @return transRem(nth($array,1));
+    }@else if(length($array)==2){
+      @return transRem(nth($array,1)) transRem(nth($array,2));
+    }@else if(length($array)==3){
+      @return transRem(nth($array,1)) transRem(nth($array,2)) transRem(nth($array,3));
+    }@else if(length($array)==4){
+      @return transRem(nth($array,1)) transRem(nth($array,2)) transRem(nth($array,3)) transRem(nth($array,4));
+    }
+  }@else{
+    @return '';
+  }
+}
+@function transVw($px) {
+    @if(unit($px)=="px") {
+        @return ($px / 138px) * 100 * 1vw;
+    }
+
+    @else {
+        @return $px;
+    }
+}

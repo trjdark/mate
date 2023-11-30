@@ -1,0 +1,25 @@
+/**
+ * desc:
+ * Date: 2018/8/6
+ * Time: 下午6:21
+ */
+
+@import "../func";
+@import "../theme";
+
+.gym-wrap{
+  background: #ffffff;
+  padding: transRem(25px);
+}
+.gym-home{
+    &-img{
+        display: block;
+        width: 400px;
+        margin: 70px auto 20px;
+    }
+    &-text{
+        text-align: center;
+        font-size: 24px;
+        color: $themeColor;
+    }
+}

@@ -1,0 +1,274 @@
+@import "../../../../style/func.scss";
+@import "../../../../style/common.scss";
+@import "./gaPanelStyle.scss";
+@import "./gbPanelStyle.scss";
+
+.gym-dashboard {
+    &-main-panel-wrap {
+        display: flex;
+    }
+
+    &-unfinished {
+        color: $themeColor;
+    }
+
+    &-finished {
+        color: #DA291C;
+    }
+
+    &-rest-days {
+        width      : transRem(116px);
+        margin-left: transRem(16px);
+        text-align : center;
+
+        &.page-wrap {
+            padding : 0;
+            overflow: hidden;
+        }
+
+        &-title {
+            height          : transRem(73px);
+            font-size       : transRem(18px);
+            background-color: $themeColor;
+            color           : #fff;
+            overflow        : hidden;
+
+            p {
+                &:first-child {
+                    margin-top: transRem(11px);
+                }
+            }
+        }
+
+        &-text {
+            height     : transRem(117px);
+            line-height: transRem(117px);
+            font-size  : transRem(72px);
+            color      : #000;
+            background : url("../images/bg2.png") no-repeat center / contain;
+        }
+    }
+
+    &-main-panel {
+        flex      : 1;
+        height    : transRem(190px);
+        text-align: center;
+
+        &.page-wrap {
+            padding   : 0;
+            overflow  : hidden;
+            background: #fff url("../images/bg1.png") no-repeat bottom center / contain;
+        }
+
+        &-data {
+            display      : flex;
+            height       : transRem(140px);
+            margin-bottom: transRem(15px);
+
+            &-item {
+                flex       : 1;
+                line-height: 1;
+                overflow   : hidden;
+
+                &-title {
+                    margin     : transRem(24px) 0 transRem(18px);
+                    font-size  : transRem(18px);
+                    font-weight: normal;
+                    color      : #666;
+
+                    &-des {
+                        font-size: transRem(14px);
+                    }
+
+                    &-icon {
+                        margin-left: transRem(5px);
+                        font-size  : transRem(16px);
+                    }
+                }
+
+                p {
+                    color: #000;
+
+                    span {
+                        &:last-child {
+                            font-size: transRem(16px);
+                        }
+
+                        &:first-child,
+                        &:only-child {
+                            font-size: transRem(28px);
+                        }
+                    }
+                }
+            }
+        }
+
+        &-time {
+            height   : transRem(20px);
+            font-size: transRem(14px);
+            color    : #4a4a4a;
+        }
+    }
+
+    &-second-panel {
+        position: relative;
+
+        &.page-wrap {
+            padding: 0;
+        }
+
+        &-top {
+            display      : flex;
+            height       : transRem(85px);
+            padding      : 0 transRem(14px);
+            color        : #000;
+            box-sizing   : border-box;
+            border-bottom: 1px solid #EBEFF2;
+
+            &-left,
+            &-right {
+                flex: 1;
+            }
+
+            &-left {
+                text-align: left;
+            }
+
+            &-right {
+                text-align: right;
+            }
+
+            h6 {
+                margin: transRem(18px) 0 transRem(6px) 0;
+            }
+
+            p {
+                font-size: transRem(20px);
+            }
+        }
+
+        &-emphasize {
+            color      : $themeColor;
+            cursor     : pointer;
+            user-select: none;
+        }
+
+        &-bottom {
+            display    : flex;
+            height     : transRem(43px);
+            padding    : 0 transRem(14px);
+            line-height: transRem(43px);
+            box-sizing : border-box;
+
+            p {
+                margin-left: transRem(20px);
+                font-size  : transRem(12px);
+            }
+        }
+
+        &-progress {
+            position        : absolute;
+            height          : transRem(3px);
+            left            : 0;
+            top             : transRem(83px);
+            width           : 100%;
+            background-color: $themeColor;
+
+            >div {
+                height          : 100%;
+                background-color: #DA291C;
+            }
+        }
+
+        h6 {
+            font-weight: normal;
+            font-size  : transRem(12px);
+            color      : $color999;
+        }
+    }
+
+    &-three-panel {
+        position  : relative;
+        text-align: center;
+        min-height: 275px;
+
+        .gym-contract-info-wrap-content {
+            position: absolute;
+            left    : 0;
+            top     : 0;
+            right   : 0;
+            bottom  : 0;
+        }
+
+        .gym-contract-info-wrap-content-no-data {
+            height: 100%;
+        }
+    }
+
+    &-table {
+        &-first-th {
+            display: flex;
+        }
+
+        .bgColor {
+            background: #f4f8fb;
+        }
+        &-flex-th{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-collapse-table {
+        font-size: 16px;
+
+        &>&-panel {
+            border: 0;
+
+            &>.ant-collapse-header {
+                padding: 0;
+
+                &>.arrow {
+                    display: none;
+                }
+            }
+
+        }
+
+        &-panel-right {
+            position : absolute;
+            top      : 0;
+            right    : 16px;
+            color    : #999;
+
+            span {
+                margin-left: transRem(7px);
+            }
+
+            &-icon {
+                transform: rotate(0);
+
+                &.open {
+                    animation: toggle-up 0.3s;
+                }
+
+                &.close {
+                    animation: toggle-down 0.3s;
+                }
+
+                @keyframes toggle-up {
+                    100% {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                @keyframes toggle-down {
+                    100% {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }   
+    }
+}

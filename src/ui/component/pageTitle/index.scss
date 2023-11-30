@@ -1,0 +1,23 @@
+/**
+ * desc: 页面标题样式
+ * Date: 2018/8/11
+ * Time: 下午1:45
+ */
+@import '@/style/web.scss';
+@import "@/style/theme.scss";
+@import "@/style/func.scss";
+
+.gym-page-title {
+    font-size: 18px;
+    font-family: $fontFamily;
+    padding: transArray(0 0 30px 5px);
+    &-wrap{
+        display: flex;
+        line-height: 20px;
+        align-items: center;
+    }
+    &-icon{
+        font-size: 20px;
+        color: $themeColor;
+    }
+}

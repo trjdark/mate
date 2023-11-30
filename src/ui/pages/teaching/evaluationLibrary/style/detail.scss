@@ -1,0 +1,45 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2020/8/3
+ * Time: 下午3:15
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+.gym-evaluation-detail{
+    &-head{
+        margin-bottom: transRem(20px);
+        &-title{
+            text-align: center;
+            font-size: transRem(32px);
+        }
+        &-level{
+            text-align: center;
+        }
+    }
+    &-info{
+        display: flex;
+        flex-wrap: wrap;
+        &-item{
+            width: 33%;
+            &-label{
+                display: inline-block;
+                width: transRem(150px);
+                text-align: right;
+                margin-bottom: transRem(10px);
+            }
+            &-content{
+                color: $themeColor;
+
+            }
+        }
+    }
+}
+.gym-target-list-content{
+    .ant-col-1{
+        margin-top:10px;
+        padding-left: 20px;
+        width: 2%;
+    }
+}

@@ -1,0 +1,24 @@
+/**
+ * desc: 翻页组件样式
+ * User: dava.zhang
+ * Date: 2018/9/17
+ * Time: 11:20
+ */
+.gym-page-content {
+    font-size: 12px;
+    line-height: 24px;
+    .ant-pagination {
+        font-size: 12px;
+    }
+
+    .ant-select {
+        font-size: 12px;
+    }
+
+    .ant-pagination-options-quick-jumper {
+        input {
+            font-size: 12px;
+        }
+    }
+}
+

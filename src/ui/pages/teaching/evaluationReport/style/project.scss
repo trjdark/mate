@@ -1,0 +1,45 @@
+/**
+ * desc:
+ * User: Vicky
+ * Date: 2020/7/31
+ * Time: 16:40
+ */
+ .gym-contract-add-form-wrap{
+     margin-bottom: 10px;
+ }
+ .gym-project-item{
+    display: flex;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    &-label{
+        border-top: 1px solid #ebf1f2;
+        border-bottom: 1px solid #ebf1f2;
+        border-left: 1px solid #ebf1f2;
+        min-width: 150px;
+        max-width: 150px;
+        text-align: left;
+        background: #F4F8FB;
+        padding: 5px 0 5px 30px;
+    }
+    &-content{
+       width: 100%;
+       border: 1px solid #ebeff2;
+       padding: 15px;
+       margin-left: -1px;
+    }
+    .complete-content{
+        padding-top: 5px;
+        border-top: 1px solid #ebf1f2;
+        min-width: 150px;
+        max-width: 150px;
+        background: #F4F8FB;
+        padding-left: 30px;
+
+    }
+
+ }
+ .gym-project-item-operation-line{
+     &-content{
+         padding: 5px 0 5px 15px;
+     }
+ }

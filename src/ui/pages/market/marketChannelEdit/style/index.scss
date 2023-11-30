@@ -1,0 +1,258 @@
+/**
+ * desc: 市场渠道样式
+ * User: Lyon.li@gymboglobal.com
+ * Date: 2018/11/1
+ * Time: 上午10:38
+ */
+@import "../../../../../style/func";
+$formBorderColor: rgb(235, 239, 242);
+.gym-channel-form {
+    border: 1px solid $formBorderColor;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .ant-row:not(:last-child) {
+        border-bottom: 1px solid $formBorderColor;
+    }
+
+    .ant-form-item-label {
+        width: 150px;
+        background-color: rgb(244, 248, 251);
+        color: rgba(0, 0, 0, 0.45);
+        text-align: left;
+        padding-left: 30px;
+        border-left: 1px solid $formBorderColor;
+        border-right: 1px solid $formBorderColor;
+        margin-left: -1px;
+
+        label {
+            color: rgb(124, 124, 124);
+        }
+    }
+
+    .ant-input {
+        height: 30px;
+        color: rgb(124, 124, 124);
+    }
+
+    .ant-calendar-picker-input.ant-input input {
+        width: 7em;
+    }
+
+    .ant-calendar-picker-input.ant-input-disabled .ant-calendar-range-picker-separator {
+        margin-right: 1.5em;
+    }
+
+    .ant-input-disabled, .ant-select-disabled .ant-select-selection {
+        background-color: transparent;
+        border-color: transparent;
+        color: rgb(124, 124, 124);
+    }
+
+    .ant-select-disabled .ant-select-arrow {
+        display: none;
+    }
+
+    .ant-input-disabled {
+        resize: none;
+    }
+
+    .remark {
+        margin: 15px 0;
+        height: transRem(64px);
+        resize: none;
+
+        &.ant-input-disabled {
+            padding-left: 0;
+        }
+    }
+    .firstRemark{
+        max-height:300px !important;
+    }
+    .rest-letter-num {
+        text-align: right;
+        line-height: normal;
+        font-size: 12px;
+        color: #adadad;
+    }
+
+    .ant-select-disabled {
+        .ant-select-selection__rendered {
+            margin-left: 0;
+        }
+    }
+
+    .ant-select {
+        font-size: 14px;
+    }
+
+    .gym-input-wrap {
+        .ant-form-item-control-wrapper {
+            padding: 0 10px 0 36px;
+        }
+
+        .ant-input-disabled {
+            padding-left: 0;
+
+            .ant-calendar-range-picker-input {
+                text-align: left;
+            }
+
+            .ant-calendar-picker-icon {
+                display: none;
+            }
+
+            & + .ant-calendar-picker-icon {
+                display: none;
+            }
+        }
+        .look-more {
+            border: 1px solid #009cbd;
+            border-radius: 3px;
+        }
+        &-span{
+            color: rgba(0, 0, 0, 0.65);
+            background-color: #fafafa;
+            border: 1px solid #e8e8e8;
+            border-radius: 2px;
+            cursor: default;
+            margin-right: 4px;
+            max-width: 99%;
+            position: relative;
+            overflow: hidden;
+            transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            padding: 5px 10px;
+        }
+    }
+
+    .ant-form-item {
+        display: flex;
+        margin-bottom: 0;
+
+        .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+
+    .format-des{
+        line-height: 25px;
+    }
+}
+
+.gym-activity-plan-table {
+    border: 1px solid $formBorderColor;
+    border-bottom: none;
+    overflow: hidden;
+
+    table {
+        width: 100.1%;
+        border-collapse: collapse;
+    }
+
+    &.gym-half-radius {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    td, th {
+        text-indent: 36px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: left;
+        border-bottom: 1px solid rgb(235, 239, 243);
+
+        .ant-input-number {
+            width: 190px;
+            text-indent: 0;
+        }
+    }
+
+    .ant-select {
+        text-indent: 0;
+    }
+
+    th {
+        line-height: 2.4;
+        font-weight: normal;
+        background-color: rgb(244, 246, 248);
+        text-align: left;
+        color: #333;
+    }
+
+    td {
+        color: rgb(124, 124, 124);
+    }
+
+    td.rowSpan {
+        border-right: 1px solid rgb(235, 239, 243);
+        background-color: rgb(244, 248, 251);
+        width: 150px;
+        text-indent: 30px;
+    }
+
+    &.plan-table-latter {
+        margin-top: -1px; // 重叠边线
+    }
+
+    .ant-input-number-input {
+        color: rgb(124, 124, 124);
+    }
+
+    .ant-input-number-disabled, .ant-input-disabled, .ant-select-disabled .ant-select-selection {
+        border-color: transparent;
+        background-color: transparent;
+
+        .ant-input-number-input {
+            padding: 0;
+        }
+    }
+
+    .ant-select-disabled {
+        color: rgb(124, 124, 124);
+
+        .ant-select-selection__rendered {
+            margin: 0;
+        }
+
+        .ant-select-arrow {
+            display: none;
+        }
+    }
+
+    .error {
+        position: relative;
+        margin-left: -0.75em;
+        &::before {
+            margin-right: 4px;
+            content: "*";
+            font-family: SimSun;
+            line-height: 1;
+            font-size: 14px;
+            color: #f5222d;
+        }
+    }
+    .input-wrap {
+        display: inline-block;
+        margin: 0;
+        .ant-form-explain {
+            text-indent: 0;
+        }
+    }
+}
+
+.gym-adjunct-wrap {
+    overflow: hidden;
+}
+.gym-adjunct {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #009cbd;
+}
+
+.gym-btn-group {
+    text-align: center;
+    button {
+        margin: 0 10px;
+    }
+}

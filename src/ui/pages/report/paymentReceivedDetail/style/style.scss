@@ -1,0 +1,19 @@
+.gym-mate-payment-item-label{
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+.gym-mate-payment-checkbox{
+  margin-right: 16px;
+  margin-left: 0 !important;
+}
+.gym-mate-payment-checkboxList{
+  display: inline;
+}
+.gym-payment-item{
+  justify-content: center;
+  .ant-form-item-control-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+}

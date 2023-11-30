@@ -1,0 +1,283 @@
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+@import "../../../../../style/web";
+
+//选课情况
+.gym-course-selection {
+    &-tab-content {
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    &-btn-group{
+        position: absolute;
+        float: right;
+        z-index: 5;
+        right: 50px;
+        width: auto;
+    }
+
+    &-year-select {
+        display: inline-block;
+    }
+
+    &-calendar-select {
+        display: inline-block;
+        margin-left: 15px;
+        line-height: 23px;
+        width: 200px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-icon {
+            font-size: 23px;
+            position: absolute;
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+        &-text {
+            display: inline-block;
+            padding-left: 28px;
+            padding-top: 6px;
+        }
+
+        &-icon-selected {
+            color: #009CBD;
+        }
+
+        &-icon-unSelected {
+            color: #999999;
+        }
+    }
+
+    &-calendar-btn-group {
+        text-align: right;
+    }
+
+    //对antd 重写样式
+    .ant-table-filter-dropdown-link.confirm {
+        float: unset;
+    }
+    .ant-table-filter-dropdown-link  {
+        float: unset;
+    }
+    .confirm {
+        float: unset;
+    }
+    .clear {
+        float: right;
+    }
+    .ant-table-column-sorters {
+        padding-left: 45px;
+    }
+    .ant-table-column-sorter {
+        right: auto;
+        left: 25px;
+    }
+    .left-trigger {
+        .ant-dropdown-trigger {
+            right: auto;
+            left: 0;
+        }
+    }
+    .middle-trigger {
+        padding-left: 30px !important;
+        .ant-dropdown-trigger {
+            right: auto;
+            left: 0;
+        }
+    }
+    .ant-table-filter-dropdown .ant-dropdown-menu-without-submenu {
+        max-height: 200px;
+    }
+}
+
+.gym-course-calendar {
+    margin-top: 25px;
+    padding-top: 15px !important;
+
+    &-list{
+        margin: 20px 10px 20px 15px;
+        border-left: 1px solid #EBEFF3;
+        height: 100%;
+
+        &-header {
+
+        }
+
+        &-header {
+
+        }
+    }
+    .ant-fullcalendar {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border:1px solid #EDF0F2;
+    }
+
+    .ant-fullcalendar-calendar-body {
+    }
+
+    .ant-fullcalendar-table {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .ant-fullcalendar-header {
+        background-color: #EBEFF3;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .ant-fullcalendar-table > thead {
+        background-color: #FFFFFF;
+        text-align: center;
+        height: 25px;
+
+        .ant-fullcalendar-column-header {
+            padding: 0;
+        }
+
+        .ant-fullcalendar-column-header-inner {
+            text-align: center;
+        }
+    }
+
+    .ant-fullcalendar-table > thead > tr {
+        height: 30px;
+        line-height: 30px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .ant-radio-group {
+        display: none;
+    }
+    .ant-fullcalendar-calendar-body {
+        padding: 0;
+    }
+}
+
+.gym-teaching-calendar-selection-title{
+    height:48px;
+    line-height:48px;
+    background:#FFFFFF;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    &-icon{
+        color:#009CBD;
+        cursor:pointer;
+    }
+}
+
+.course-operation {
+    .arrange {
+        flex: 1;
+        background-color: #FFFFFF;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .arrange-title-header-dot {
+            float: left;
+            width: 12px;
+            height: 12px;
+            background-color: #009CBD;
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-left: 11px;
+        }
+        .arrange-title-header-date {
+            float: left;
+            padding-left: 22px;
+        }
+        .arrangeItem {
+            background-color: white;
+            height: 80px;
+            border-radius: 10px;
+            width: calc(100% - 20px);
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &-type {
+                width: 36px;
+                height: 36px;
+                background-color: #DA291C;
+                border-radius: 18px;
+                margin: 0 10px;
+                color: white;
+                line-height: 36px;
+                text-align: center;
+                z-index: 5;
+            }
+            &-content {
+                flex: 1;
+                z-index:5;
+            }
+            &-staff {
+                color: #999999;
+            }
+            &-button {
+                margin-top: 10px;
+            }
+        }
+    }
+    .arrange-border {
+        border-left:1px solid #EBEFF3;
+        position: absolute;
+        height: 750px;
+        width:1px;
+        margin-left: 37px;
+        margin-top: 37px;
+        z-index: 0;
+    }
+    .arrange-title {
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        font-size: 16px;
+        z-index: 5;
+        margin-bottom: 25px;
+    }
+}
+
+.course-title {
+    font-size: 10px;
+    z-index: 5;
+
+    &-dot {
+        float: left;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-left: 11px;
+    }
+    &-text{
+        float: left;
+        padding-left: 5px;
+    }
+
+    .L {
+        background-color: #EF7421;
+    }
+    .M {
+        background-color: #009CBD;
+    }
+    .A {
+        background-color: #40C1AC;
+    }
+    .GK {
+        background-color: #FFA0BC;
+    }
+    .DT {
+        background-color: #DA291C;
+    }
+}
+
+
+
+
+

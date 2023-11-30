@@ -1,0 +1,46 @@
+/**
+ * desc:
+ * User:
+ * Date: 2018/8/15
+ * Time: 下午4:15
+ */
+@import "../../../../../style/theme.scss";
+
+.gym-button-lock{
+  margin-left: 10px;
+}
+.gym-approve-btn{
+  .ant-btn-primary{
+    padding: 0;
+  }
+}
+.gym-approve-detail{
+  &-head{
+    &-title{
+      font-size: 20px;
+      text-align: center;
+      .corange{
+        color: #999;
+      }
+    }
+  }
+  &-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 25px;
+    &-item{
+      width: 33.3%;
+      &-label{
+        width: 5rem;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    .change{
+      color: #009cbd;
+    }
+  }
+    .btn{
+      text-align: center;
+    }
+}

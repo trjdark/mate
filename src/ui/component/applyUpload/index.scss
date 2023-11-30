@@ -1,0 +1,31 @@
+/**
+ * desc: 上传组件样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/9/30
+ * Time: 上午9:57
+ */
+
+@import "../../../style/theme";
+@import "../../../style/func";
+
+.gym-contract-upload{
+  .ant-upload-list{
+      min-width: transRem(200px);
+      display: inline-block;
+  }
+
+  .ant-upload-list-item {
+      display: inline-block;
+  }
+
+  .ant-upload-list-item .anticon-close{
+    color: $error;
+  }
+  .ant-upload-list-item-info{
+
+  }
+  .ant-upload-list-item-name{
+    color: $themeColor;
+  }
+
+}

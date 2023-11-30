@@ -1,0 +1,9 @@
+.gym-finance-administration{
+  padding-left:10px;
+  &-formitem{
+    display:flex;
+    .gym-finance-administration &-select{
+        width: 200px;
+      }
+  }
+}

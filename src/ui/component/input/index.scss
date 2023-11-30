@@ -1,0 +1,17 @@
+/**
+ * desc: 输入控件样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/1/30
+ * Time: 上午10:35
+ */
+
+.gym-item-input{
+    width: 200px;
+    &-textarea{
+        margin: 4px 0;
+        resize: none;
+    }
+    &-number{
+        width: 200px;
+    }
+}

@@ -1,0 +1,41 @@
+/**
+*Desc: 增加gymguard
+*User: colin.lu
+*Date: 2018/12/27,
+*Time: 上午10:50
+*/
+
+.gym-teaching-add-gymguard-button{
+    height:48px;
+    line-height:48px;
+    background:#EBEFF3;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    &-icon{
+        color:#009CBD;
+        cursor:pointer;
+    }
+
+    &-modal {
+        width: 750px !important;
+    }
+
+    .ant-modal-content {
+        border-radius: 20px;
+    }
+}
+
+.gym-guard-modal {
+    .ant-modal-content {
+        border-radius: 20px;
+        width: 750px;
+    }
+
+    .ant-modal-body {
+        padding:30px 15px;
+    }
+}
+
+.gym-teaching-schedule-add-page-title {
+    margin-left: -20px;
+}

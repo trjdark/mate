@@ -1,0 +1,22 @@
+/**
+ * desc:
+ * Date: 2018/8/15
+ * Time: 下午4:15
+ */
+@import "../../../../../style/theme.scss";
+
+.gym-button-lock{
+  margin-left: 10px;
+}
+.gym-apply-account {
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 20px;
+  .gym-apply-deblock{
+    margin-left: 5px;
+  }
+  span:nth-child(2){
+	margin-left: 30px;
+	color: #009cbd;
+	cursor: pointer;
+  }
+}

@@ -1,0 +1,128 @@
+@import "@/style/func.scss";
+
+.gym-confirm-modal{
+    position: relative;
+    .confirm-topIcon{
+        position: absolute;
+        top: -35px;
+        left: 145px;
+        width: 70px;
+        height: 70px;
+        border: 4px solid white;
+        border-radius: 35px;
+        background-color: #009CBD;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        font-size: 45px;
+    }
+    .topIcon {
+        position: absolute;
+        top: -35px;
+        left: 145px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        line-height: 60px;
+        color: #009cbd;
+        font-size: 60px;
+    }
+    .ant-modal-confirm-btns{
+        float:none;
+        text-align:center;
+    }
+    .ant-modal-confirm-body .ant-modal-confirm-content{
+        text-align:center;
+        margin-left:0;
+
+    }
+}
+.gym-customer-create-specified-modal {
+    .ant-modal-content {
+        min-height: 191px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 26px;
+
+        .ant-modal-body {
+            flex: 1;
+            position: relative;
+            padding: 0;
+
+            .text {
+                text-align: center;
+                position: relative;
+                top: 60px;
+                font-size: 18px;
+                color: #666666;
+                padding: 0px 20px;
+            }
+
+            .contract-info {
+                text-align: center;
+                top: 60px;
+                font-size: 18px;
+                color: #666666;
+            }
+
+            .title {
+                text-align: center;
+                position: relative;
+                top: 50px;
+                font-size: 14px;
+                color: #666666;
+            }
+
+            .topIcon {
+                position: absolute;
+                top: -35px;
+                left: 165px;
+                width: 70px;
+                height: 70px;
+                border: 4px solid white;
+                border-radius: 35px;
+                background-color: #009CBD;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                font-size: 45px;
+            }
+
+            .contract-text {
+                text-align: center;
+                position: relative;
+                top: 0;
+                font-size: 18px;
+                color: #666666;
+                padding: 0px 20px;
+            }
+            .footButton{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .ant-modal-footer {
+            border-top: 0px;
+            text-align: center;
+            padding-bottom: 30px;
+
+            .ant-btn:last-child {
+                margin-left: transRem(12px);
+                border-radius: 15px;
+                width: 90px;
+            }
+
+            .ant-btn:first-child {
+                border-color: #009CBD;
+                color: #009CBD;
+                border-radius: 15px;
+                width: 90px;
+            }
+        }
+
+    }
+
+}

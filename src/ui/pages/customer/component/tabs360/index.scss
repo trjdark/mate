@@ -1,0 +1,45 @@
+@import "@/style/func.scss";
+$wrapperBorderColor: #EBEFF2;
+$wrapperHeight: transRem(250px);
+$wrapperBorderRadius: 20px;
+
+.tabs-360 {
+  width: 100%;
+  height: 100%;
+  .ant-tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+
+    .ant-tabs-bar {
+      margin-bottom: 0px;
+      border-bottom: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .ant-tabs-content {
+      flex: 1;
+      border: 1px solid $wrapperBorderColor;
+      border-radius: $wrapperBorderRadius;
+      overflow: hidden;
+        overflow: visible;
+
+      .ant-tabs-tabpane {
+        height: 100%;
+      }
+    }
+  }
+
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 5px;
+  }
+
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+    background-color: #009cbd;
+    color: white;
+  }
+}

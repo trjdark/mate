@@ -1,0 +1,577 @@
+/**
+ * desc: 合同操作
+ * User: colin.lu
+ * Date: 2018/11/3
+ * Time: 上午10:00
+ */
+
+@import "../theme";
+@import "../func";
+@import "../web";
+
+.gym-contract {
+    &-tab-content {
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    &-content {
+        margin-bottom: 25px;
+    }
+    &-searchForm {
+        margin-bottom: 20px;
+    }
+
+    &-transBlue {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #009CBD ;
+        display: inline-block;
+        flex: 1;
+        margin-right:4px;
+    }
+
+    &-transGreen {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #40C1AC ;
+        display: inline-block;
+        flex: 1;
+        margin-right:4px;
+    }
+
+    &-transRed {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #DA291C;
+        display: inline-block;
+        flex: 1;
+        margin-right:4px;
+    }
+
+    &-transStatus {
+        display: flex;
+        flex:1
+    }
+
+    &-btn-action {
+        background-color: $white;
+        color: #009CBD;
+        border: 1px solid #009CBD;
+        border-radius: 12px;
+        width: 48px;
+        height: 24px;
+        margin-right: 8px;
+
+        &:hover {
+            background-color: #009CBD;
+            color: $white;
+        }
+    }
+
+    &-btn-default {
+        background-color: $white;
+        color: #009CBD;
+        border: 1px solid #009CBD;
+        border-radius: 12px;
+        width: 48px;
+        height: 24px;
+        margin-right: 8px;
+
+        &:hover {
+            background-color: #009CBD;
+            color: $white;
+        }
+    }
+
+    &-transIcon {
+        color: #B2E1EB;
+        font-weight: bolder;
+        &.out{
+            color: #EBE0BA;
+        }
+    }
+
+    //合同操作 详情审批
+    &-step {
+        margin: 30px 50px 30px 50px;
+        padding: 0 50px;
+    }
+
+    //三种图表
+    &-waitingIcon {
+        position: absolute;
+        color: #009cbd;
+        font-size: 18px;
+        margin: -4px 0 0 -3px;
+    }
+
+    &-successIcon {
+        position: absolute;
+        color: #009cbd;
+        font-size: 18px;
+        margin: -4px 0 0 -4px;
+    }
+
+    &-failIcon {
+        position: absolute;
+        color: #da291c;
+        font-size: 18px;
+        margin: -4px 0 0 -4px;
+    }
+
+    //详情基础信息
+    &-table {
+        width: 100%;
+
+        &-top {
+            border-top: 1px solid #ebf1f2;
+        }
+
+        &-thead {
+            background-color: #EBEEF3;
+            width: 100%;
+            border: 1px solid #ebf1f2;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-sizing: border-box;
+            &-babyName {
+                width: 160px;
+                padding-left: 36px;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            &-babyName-value {
+                padding-left: 36px;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            &-month-age {
+                width: 160px;
+                padding-left: 36px;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            &-left{
+                border-top-left-radius: 10px;
+            }
+            &-right{
+                border-top-right-radius: 10px;
+            }
+            &-content {
+                width: 50%;
+                padding: 10px 25px;
+            }
+            &-label {
+                color: #000000;
+            }
+            &-value {
+                margin-left: 15px;
+            }
+            &.no-radius{
+                border-top-left-radius: 0;
+                border-top-right-radius: 0px;
+            }
+            &-col{
+                line-height: 39.9999px;
+                margin-bottom: -1px;
+                border-top: 1px solid #ebf1f2;
+                border-bottom: 1px solid #ebf1f2;;
+            }
+        }
+
+        &-tbody {
+            width: 100%;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ebf1f2;
+            border-left: 1px solid #ebf1f2;
+            border-right: 1px solid #ebf1f2;
+
+            &-bottom{
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            &-left {
+                border-bottom-left-radius: 10px;
+            }
+            &-right {
+                border-bottom-right-radius: 10px;
+            }
+
+            &-label{
+                padding: 10px 0 10px 20px;
+                background-color: #F4F8FB;
+                min-width: 160px;
+                max-width:160px;
+                width: 17%;
+            }
+            &-value{
+                padding: 10px 0 10px 36px;
+                background-color: #FFFFFF;
+            }
+
+            &-form {
+                padding: 2px 0 2px 36px;
+                height: 40px;
+
+                &-label {
+                    padding: 40px 0 64px 30px;
+                    background-color: #F4F8FB;
+                    width: 160px;
+                }
+
+                &-value{
+                    height: auto;
+                    overflow: auto;
+                    padding: 10px 150px 0 36px;
+                    margin-bottom: 10px;
+                    background-color: #FFFFFF;
+                    vertical-align: center;
+
+                    .ant-form-explain {
+                        display: inline-block !important;
+                        float: right;
+                        margin-top: 10px;
+                        margin-left: 3px;
+                    }
+                }
+
+                &-attachment {
+                    padding: 28px 0 44px 36px;
+                    background-color: #F4F8FB;
+                    height: 155px;
+                    vertical-align: middle;
+                    width: 160px;
+                }
+
+                .ant-form-explain {
+                    display: inline-block !important;
+                    float: right;
+                    margin-top: 10px;
+                    margin-left: 3px;
+                }
+
+            }
+            // 合同信息备注
+            &.footer{
+                display: flex;
+            }
+        }
+
+        &-bottoms {
+            text-align: center;
+            padding: 15px;
+            &-button{
+                margin:10px;
+            }
+        }
+
+        &-required {
+            color: red;
+            margin-right: 2px;
+            &-label {
+                padding-left: 22px;
+            }
+        }
+    }
+
+    //过期确认合同
+    &-confirm-modal {
+        padding: 45px 0px 15px 90px;
+        width: 100%;
+        display: block;
+    }
+
+    &-confirm-modal-content {
+        width: 100%;
+    }
+
+    &-confirm-modal-label {
+        width: 50%;
+    }
+
+    &-confirm-modal-value {
+        width: 50%;
+        color: #009CBD;
+    }
+
+    &-confirm-modal-marginLeft {
+       margin-left: 28px;
+    }
+
+    &-confirm-modal-marginLeft2 {
+        margin-left: 14px;
+    }
+
+    //收付款确认
+    &-confirm {
+        &-content {
+            background-color: #E5F5F8;
+            border-radius: 8px;
+            height: 60px;
+            width: 100%;
+            padding: 10px 30px;
+            margin-top: 24px;
+        }
+
+        &-label {
+            color: #000000;
+            font-size: 18px;
+            padding: 7px 0;
+            line-height: 40px;
+        }
+
+        &-value {
+            color: #EF7421;
+            font-size: 18px;
+            padding: 7px 0;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+        &-date {
+            color: #000000;
+            font-size: 18px;
+            line-height: 40px;
+            margin-left: 10px;
+            margin-top: -5px;
+        }
+
+        &-check-box {
+            color: #000000;
+            font-size: 14px;
+        }
+
+        &-check-box {
+           margin-top: 10px;
+        }
+
+        &-check-value {
+            color: #EF7421;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        &-check-time {
+            color: #666666;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        &-check-tip {
+            color: #999999;
+            font-size: 14px;
+        }
+    }
+
+    &-close-btn {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    //@todo 被 .gym-add-application-form .ant-form-item 样式display:flex覆盖了 注意重写的权重
+    &-payandreceive-select {
+        display: block !important;
+    }
+
+    &-other-column-width {
+        width: auto;
+        min-width: 125px;
+    }
+
+    .gym-contract-table-thead-value {
+        margin-left: 15px;
+    }
+    //修改tab list样式
+    .ant-tabs-bar {
+        margin: 0 0 1px 0;
+        padding: 0 45px;
+        border: 0;
+        z-index: 0;
+    }
+
+    .ant-tabs .ant-tabs-top-content {
+        width: 100%;
+        position: relative;
+        z-index: 5;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab {
+    background-color: #FFFFFF !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+
+    }
+
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+    background-color: #009cbd !important;
+    color: $white !important;
+    font-weight: 200;
+    }
+
+    .ant-calendar-picker-input {
+        width: 250px;
+    }
+
+    .edit-contract {
+        .ant-calendar-picker-input {
+            width: 200px;
+        }
+    }
+
+
+    .ant-calendar-range-picker-input {
+        width: 44% !important;
+    }
+
+    .ant-tabs-tab{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .gym-customer-create-specified-modal {
+        .ant-modal-content {
+            .ant-modal-body {
+                .text {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .gym-clearfix {
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+}
+
+.gym-contract-add-center {
+    .ant-form-item-label{
+        text-align: center;
+    }
+}
+
+.gym-add-application{
+    .gym-contract-babyName{
+         .ant-form-item-control .has-error{
+            width: 245px;
+        }
+        .ant-form-explain{
+            position: absolute;
+            margin-top: -28px;
+            margin-left: 150px;
+        }
+    }
+    .gym-contract-payType{
+        .ant-form-item-control{
+            width: 245px;
+        }
+        .ant-form-explain{
+            position: absolute;
+            right: 30px;
+        }
+    }
+    .gym-contract-reason{
+        .ant-form-item-control{
+            width: 245px;
+        }
+        .ant-form-explain{
+            position: absolute;
+            margin-top: -28px;
+            right: 10px;
+        }
+    }
+    .gym-contract-date{
+        .ant-form-item-control{
+            width: 300px;
+        }
+        .ant-form-explain{
+            position: absolute;
+            right: 10px;
+        }
+    }
+    .gym-contract-add-required{
+        .ant-form-explain{
+            display: inline-block;
+            padding-left: 15px;
+        }
+    }
+    .gym-contract-price{
+        .ant-form-item-control{
+            width: 245px;
+        }
+        .ant-form-explain{
+            position: absolute;
+            margin-top: -28px;
+            right: 30px;
+        }
+    }
+    .gym-contract-contractId{
+        .ant-form-explain{
+            margin-top: -28px;
+            position: absolute;
+            right: 15px;
+        }
+    }
+}
+
+.mt2 {
+    margin-top: 1px;
+}
+
+.contract-colorGray{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #b7b3b3;
+    display: inline-block;
+    margin-right: 5px;
+}
+.contract-colorRed{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #DA291C;
+    display: inline-block;
+    margin-right: 5px;
+}
+.contract-colorBlue{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background: #009CBD;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.contract-colorGreen{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background: #40C1AC;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.contract-colorOrange{
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background: #ED7430;
+    display: inline-block;
+    margin-right: 5px;
+}
+.gym-contract-form-required {
+    height: 57px;
+}
+
+

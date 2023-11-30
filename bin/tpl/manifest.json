@@ -1,0 +1,15 @@
+{
+  "short_name": "OA系统",
+  "name": "金宝贝OA系统",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "80*80",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

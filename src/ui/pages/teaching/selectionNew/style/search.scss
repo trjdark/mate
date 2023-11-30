@@ -1,0 +1,59 @@
+@import "@/style/func.scss";
+@import "@/style/theme.scss";
+.selection-search-wrapper {
+  width: 100%;
+  border: 1px solid #ebeff3;
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
+
+  .row-name {
+    background-color: #EBEFF3;
+    height: 48px;
+    line-height: 48px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .name,.month{
+      padding-left: 20px;
+    }
+  }
+
+  .row-package{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #EBEFF2;
+    border-top: none;
+    box-sizing: content-box;
+    .left {
+      background-color: #F4F8FB;
+      padding-left: 20px;
+      border-bottom: 1px solid #EBEFF2;
+      border-right: 1px solid #EBEFF2;
+      color:#666666;
+    }
+  }
+
+  .btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .last-row{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+
+  &-modal{
+    text-align: center;
+    &-title{
+      color: $themeColor;
+      margin-bottom: transRem(5px);
+    }
+    &-content{
+      margin-top: transRem(10px);
+      margin-bottom: transRem(20px);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/**
+ * desc:
+ * User: Vicky
+ * Date: 2020/7/31
+ * Time: 16:40
+ */
+.gym-evaluation-add{
+    .remark{
+        margin: 10px 0;
+    }
+    .gym-evaluation-add-goal{
+        background-color: #f4f6f8;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        span:nth-child(1)::before{
+                display: inline-block;
+                margin-right: 4px;
+                content: '*';
+                font-family: SimSun;
+                line-height: 1;
+                font-size: 14px;
+                color: #f5222d;
+                
+            }
+        span:nth-child(1){
+            display: inline-block;
+            width: 140px;
+            text-align: center;
+        } 
+        span:nth-child(2){
+            margin-right:20px;
+        } 
+    }
+  
+}
+.gym-target{
+    margin-left: 15px;
+}
+.gym-target-delete-btn {
+    line-height: 24px;
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    clear: both;
+}
+.gym-button-delete-big{
+    float: right;
+    
+}
+.gym-baby-name{
+    padding-left: 36px;
+}
+.color-red{
+    color: red;
+}
+.gym-repeat-title {
+    background: #CACFE7;
+    padding: 10px 0;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+

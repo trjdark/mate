@@ -1,0 +1,51 @@
+{
+    "data":[{
+        "key": 1,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 1
+    },{
+        "key": 2,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 3
+    },{
+        "key": 3,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 0
+    },{
+        "key": 4,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 0
+    },{
+        "key": 5,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 1
+    },{
+        "key": 6,
+        "marketCode": "sfsd",
+        "marketName": "五角场地推",
+        "dateTime": "18/09/10-18/11/20",
+        "createPerson": "水淀粉",
+        "createTime": "18/09/09",
+        "status": 1
+    }]
+}

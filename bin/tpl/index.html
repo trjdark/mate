@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1, shrink-to-fit=yes">
+    <meta name="theme-color" content="#000000">
+    <!--<link rel="manifest" href="%PUBLIC_URL%/manifest.json">-->
+    <!--<link rel="shortcut icon" href="/favicon.png" id="titleIcon" type="image/x-icon">-->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<!--[if lt IE 10] IE 10以下版本>
+<![endif]-->
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="react-container"></div>
+<!-- built files will be auto injected -->
+</body>
+<script>
+    var userAgent = window.navigator.userAgent;     // 用户代理
+    if (!(userAgent.indexOf('Chrome') > -1 || userAgent.indexOf(('Safari')) > -1)) {
+        alert('您的浏览器版本过低，请升级至最新版本的Chrome浏览器或Safari浏览器，以便获得更好的体验！');
+    }
+</script>
+</html>

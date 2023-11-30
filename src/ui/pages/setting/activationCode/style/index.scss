@@ -1,0 +1,50 @@
+/**
+ * desc:
+ * Date: 2018/8/15
+ * Time: 下午4:15
+ */
+@import "../../../../../style/theme.scss";
+
+.gym-acode {
+  &-manage{
+    .ant-form-item {
+      display: flex;
+    }
+    &-table{
+      .ant-table-thead > tr > th .ant-table-column-sorter{
+          right: auto;
+          left: -5px;
+      }
+    }
+  }
+  &-count{
+    padding-left: 20px;
+    display: flex;
+    border-bottom: 1px solid #EBEFF2;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    .title{
+      font-weight: bold;
+    }
+    .number{
+        flex:1;
+        font-weight: bold;
+        color: $themeColor;
+        &.error{
+            color:$error;
+        }
+    }
+  }
+  &-add{
+      .ant-form-item-control-wrapper{
+          width: 200px;
+      }
+    .ant-form-item {
+      display: flex;
+    }
+    &-select{
+      width: 200px;
+    }
+  }
+
+}

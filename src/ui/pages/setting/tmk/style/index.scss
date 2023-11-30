@@ -1,0 +1,43 @@
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+@import "../../../../../style/web";
+
+.gym-tmk{
+    // 添加TMK中心
+    &-add{
+        .ant-form-item {
+            display: flex;
+        }
+        .gym-tmk-add-select{
+            width: 70%;
+        }
+    }
+    &-detail{
+        padding-bottom: 50px;
+        &-item{
+            display: flex;
+            margin-top: -1px;
+            &-label{
+                width: 200px;
+                text-align: right;
+                border: 1px solid $borderColor;
+                background: #f4f8fb;
+                padding: 15px;
+            }
+            &-content{
+                width: calc(100% - 200px);
+                border: 1px solid $borderColor;
+                padding: 15px;
+                margin-left: -1px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

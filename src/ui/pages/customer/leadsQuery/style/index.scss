@@ -1,0 +1,32 @@
+/**
+*Desc: 跨中心查询,本中心查詢樣式
+*User: Debby.Deng
+*Date: 2019/1/16,
+*Time: 3:02 PM
+*/
+
+@import '@/style/web.scss';
+.gym-outer-query{
+    padding:30px 15px 15px;
+    border-radius:20px;
+    .gym-table-wrap .gym-page-content{
+        padding:0 20px;
+    }
+    .ant-table-content{
+        margin-bottom:0;
+    }
+    &-form{
+        @extend .clear;
+        display: flex;
+    }
+    &-search{
+        margin:3px 0 0 30px;
+
+    }
+    .ant-form-item{
+        margin-bottom:20px;
+    }
+}
+.gym-inner-query{
+    border-radius:20px;
+}

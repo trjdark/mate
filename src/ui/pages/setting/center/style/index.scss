@@ -1,0 +1,67 @@
+/**
+ * desc:
+ * Date: 2018/8/15
+ * Time: 上午9:13
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+$tableSpanPadding: transArray(0 5px);
+
+.gym-center{
+  .ant-form-item {
+    display: flex;
+  }
+  /*****************管理*****************/
+  &-manage{
+
+    &-select{
+      width: transRem(200px) !important;
+    }
+    .span-link{
+      padding: $tableSpanPadding;
+      cursor: pointer;
+      color: $themeColor;
+    }
+  }
+  /*****************添加*****************/
+  &-add{
+    &-input{
+      width:200px !important;
+      &.long{
+        width:transRem(854px) !important;
+      }
+    }
+    &-select{
+      width:200px !important;
+    }
+    .ant-form-item-label{
+      width: 80px;
+    }
+  }
+  /*****************设置*****************/
+  &-set{
+      &-approve{
+          .ant-form-item-label{
+              width: 160px;
+          }
+      }
+    &-form-item{
+      .gym-unit{
+
+      }
+      &-span{
+        line-height: 40px;
+          color:#000;
+
+      }
+      &-radio-group{
+        display: inline-flex;
+      }
+      &-select{
+        width: transRem(200px) !important;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,36 @@
+.width20 {
+    width: 20%;
+    float: left;
+    border-right: 1px solid #ebf1f2;
+    text-align: center;
+}
+
+.gym-apply-manage {
+    .ant-tabs-tab{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    &-tab-content {
+        margin-top: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.gym-contract-step {
+    margin-bottom: 30px;
+}
+
+.gym-teaching-none-margin-bottom {
+    .ant-table-content {
+        margin-bottom: 0;
+    }
+}
+.gym-leaveDetail-modal{
+    width: 90% !important;
+    max-width: 1024px;
+}
+.gym-apply-leave-main{
+    padding: 7px;
+}

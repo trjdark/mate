@@ -1,0 +1,279 @@
+/**
+ * desc: 云语音leads池样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/12/5
+ * Time: 下午4:53
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+// 云语音leads样式
+.gym-call{
+    &-page-wrap{
+        background: $bgColor;
+        padding: 15px;
+        border-radius: transRem(10px);
+        box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+    }
+    &-head-box{
+        display: flex;
+        justify-content: space-between;
+        &-dialing-status{
+            display: flex;
+            align-items: center;
+            background: #40C1AC;
+            color: $white;
+            font-size: 14px;
+            padding: transArray(0 20px);
+            border-radius: transRem(5px);
+        }
+        &-login-status{
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: transArray(0 10px);
+            border-radius: transRem(5px);
+            border: 1px solid #999;
+            color: #999;
+            &.active{
+                border: 1px solid #40C1AC;
+                color: #40C1AC;
+            }
+        }
+    }
+    &-right{
+        &-action{
+            padding-left:15px;
+        }
+        &-form{
+            padding-left:15px;
+        }
+    }
+    &-member-list{
+        font-size: 14px;
+        &.active{
+            background: $themeColor;
+            color: #fdfdfd;
+            &:hover > td{
+                background: #2dccd3 !important;
+                color: #fdfdfd !important;
+            }
+        }
+    }
+
+    // 客户列表
+    &-member-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+    }
+    // 联系人模块样式
+    &-parent{
+        &-info-card{
+            padding-left: 15px;
+            .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-right: 5px;
+            }
+            .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+                background-color: #009cbd;
+                color: white;
+            }
+            .ant-tabs-bar{
+                margin-bottom: 1px;
+                padding: 0 30px;
+                border-bottom: none;
+            }
+            &-main{
+                &-info{
+                    font-size: 14px;
+                    .primary{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px;
+                        background: $themeColor;
+                        font-size: 14px;
+                        color: $white;
+                        text-align: center;
+                        line-height: 20px;
+                        margin-right: transRem(5px);
+                    }
+                    .phone{
+                        margin-left: transRem(30px);
+                    }
+                }
+                &-remark{
+                    height: 50px;
+                    overflow: auto;
+                    font-size: 12px;
+                    padding: 5px 0;
+                }
+                &-buttons{
+                    text-align: center;
+                    padding-top: 15px;
+                    border-top: 1px solid #e1e1e1;
+                }
+            }
+            &-no-date{
+                height: 180px;
+                text-align: center;
+                font-size: 18px;
+                color: $color999;
+                margin-bottom: 15px;
+            }
+        }
+        &-modal{
+            &-main{
+                &-form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    &-item{
+                        display: flex;
+                        width: 50%;
+                        .ant-form-item-label{
+                            width: 120px;
+                            text-align: right;
+                        }
+                        &.long{
+                            width: 100%;
+                            .ant-form-item-control-wrapper{
+                                width: calc(50% + 200px);
+                            }
+                        }
+                    }
+                    &-buttons{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    // 宝宝模块样式
+    &-baby-info-card{
+        padding-left: 15px;
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-right: 5px;
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+            background-color: #009cbd;
+            color: white;
+        }
+        .ant-tabs-bar{
+            margin-bottom: 1px;
+            padding: 0 30px;
+            border-bottom: none;
+        }
+        &-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: url("../../../../images/bbinfo-360.png") #fff no-repeat bottom center / contain;
+            padding: 15px;
+            border-radius: transRem(10px);
+            box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+            margin-bottom: 15px;
+            height: 139px;
+            font-size: 12px;
+            .avatar{
+                position: relative;
+                margin-top: -30px;
+                img{
+                    display: inline-block;
+                    width: 75px;
+                    height: 75px;
+                    border: 1px solid #e1e1e1;
+                    border-radius: 75px;
+                }
+                &-gender{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    position: absolute;
+                    left: 27px;
+                    top:65px;
+                    background: $themeColor;
+                    color: $white;
+                }
+            }
+            .content{
+                width: transRem(180px);
+                font-size: 12px;
+            }
+        }
+    }
+    // 操作按钮模块样式
+    &-action-buttons{
+        margin-bottom: 15px;
+        &-form{
+            display: flex;
+            flex-wrap: wrap;
+            &-item{
+                display: flex;
+                width: 50%;
+                .ant-form-item-label{
+                    width: 120px;
+                    text-align: right;
+                }
+            }
+            &-buttons{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    // 表单提交
+    &-form{
+        border: 1px solid #EBF1F3;
+        border-radius: transRem(10px);
+        overflow: hidden;
+        margin-bottom: transRem(20px);
+        &-th{
+            font-size: transRem(18px);
+            background: #EBF1F3;
+            font-weight: bold;
+            height: transRem(48px);
+            line-height: transRem(48px);
+            text-indent: transRem(20px);
+        }
+        &-item{
+            display: flex;
+            margin-bottom: 0;
+            border-bottom: 1px solid #EBF1F3;
+            &:last-child{
+                border-bottom: none;
+            }
+            .ant-form-item-label{
+                width: transRem(150px);
+                background: #F4F9FA;
+            }
+            .ant-form-item-control-wrapper{
+                padding-left: transRem(20px);
+                width: transRem(500px);
+            }
+        }
+        &-button{
+            text-align: center;
+        }
+    }
+}
+
+.gym-position{
+    position: relative;
+    .gym-call-action-buttons{
+        position: absolute;
+        bottom: transRem(5px);
+        left:transRem(65px);
+    }
+}

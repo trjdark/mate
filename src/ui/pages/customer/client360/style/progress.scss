@@ -1,0 +1,18 @@
+@import "@/style/func.scss";
+$wrapperBorderColor: #EBEFF2;
+
+// 里程碑 样式
+.progressWrapper {
+  border: 1px solid $wrapperBorderColor;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 6px;
+  padding: 20px;
+  .stepsWrapper {
+    padding: 20px 10px 0px 10px;
+  }
+  .ant-steps-item-title {
+    display: flex;
+    justify-content: space-between;
+  }
+}

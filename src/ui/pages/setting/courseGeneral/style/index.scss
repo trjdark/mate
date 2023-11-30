@@ -1,0 +1,73 @@
+/**
+ * desc: 总部课程包管理主页样式
+ * Date: 2018/8/11
+ * Time: 下午1:33
+ */
+
+@import "../../../../../style/func";
+
+$unitColor: red;
+
+/****************总部课程包管理****************/
+.gym-general-course-manage {
+  &-create{
+    margin-bottom: transRem(15px);
+  }
+  &-table{
+    margin-bottom: transRem(15px);
+  }
+}
+
+  /****************总部课程包添加****************/
+#gym-general-course-create {
+  .ant-form-item {
+    display: flex;
+  }
+  .gym-unit{
+    margin-left: transRem(5px);
+  }
+    .gym-center-add{
+        position:relative;
+        height:40px;
+        line-height:35px;
+        background: #fff;
+        color: #000;
+        border: 1px solid #009cbd;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &-icon{
+            position:absolute;
+            right:10px;
+            top:0;
+            z-index:2;
+            cursor:pointer;
+        }
+        &-plus{
+            height:40px;
+            border-radius:20px;
+        }
+    }
+}
+
+
+/****************总部课程包选择中心******************/
+#gym-general-course-select-center{
+  border-radius:20px;
+  background:white;
+    overflow-y:auto;
+  .ant-form-item {
+    display: flex;
+  }
+    .ant-form-item-label{
+        min-width:3rem;
+    }
+    .ant-form-item-control-wrapper{
+        width:200px;
+    }
+}
+
+.gym-general-course-create-form .ant-form-item-label{
+  width:150px;
+}

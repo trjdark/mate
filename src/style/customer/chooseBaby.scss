@@ -1,0 +1,39 @@
+/**
+*Desc: 活动记录页面样式/选择宝宝
+*User: Vicky.Yu
+*Date: 2018/12/19,
+*Time: 下午13:58
+*/
+.ant-modal-content{
+  border-radius: 20px;
+  .ant-modal-header{
+    border-radius: 20px;
+  }
+}
+.baby-list {
+    padding-left: 0;
+    margin-top: 20px;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    li {
+      float: left;
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #009cbd;
+      border-radius: 20px;
+      list-style: none;
+      color: #666;
+      margin: 0.03571rem 0.53571rem 0.35714rem 0.03571rem;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      &.active {
+        background: #009cbd;
+        color: #fff;
+      }
+   }
+}

@@ -1,0 +1,49 @@
+/**
+ * desc: 员工信息
+ * Date: 2018/8/17
+ * Time: 上午9:37
+ */
+
+@import "../func";
+
+$labelWidth:transRem(100px);
+$inputWidth: transRem(200px);
+$selectWidth: transRem(200px);
+
+
+.gym-employee-add {
+  .ant-form-item{
+    display: flex;
+  }
+  &-form-item{
+    .ant-form-item-label{
+        min-width: 100px;
+    }
+    .ant-form-item-control{
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+  }
+  &-select{
+    width: 100%;
+  }
+   .ant-input{
+      width:200px;
+
+
+   }
+}
+.gym-employee-info-part{
+  width:350px;
+}
+.gym-wide-form-control {
+    .ant-form-item-control {
+        width: 250px;
+    }
+    .ant-form-explain {
+        height: 40px;
+        white-space: normal;
+    }
+}

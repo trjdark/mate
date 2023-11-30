@@ -1,0 +1,43 @@
+{
+  "data":[{
+    "key": 1,
+    "roleName": "GA",
+    "centerBelong": "SH古北中心",
+    "note": "128课时",
+    "action": "",
+    "date": "2018-08-13",
+    "id":"111"
+  },{
+    "key": 2,
+    "roleName": "GB",
+    "centerBelong": "SH古北中心",
+    "note": "128课时",
+    "action": "",
+    "date": "2018-08-13",
+    "id":"112"
+  },{
+    "key": 3,
+    "roleName": "INS",
+    "centerBelong": "SH古北中心",
+    "note": "128课时",
+    "action": "",
+    "date": "2018-08-13",
+    "id":"113"
+  },{
+    "key": 4,
+    "roleName": "MKT",
+    "centerBelong": "SH古北中心",
+    "note": "128课时",
+    "action": "",
+    "date": "2018-08-13",
+    "id":"114"
+  },{
+    "key": 5,
+    "roleName": "GI",
+    "centerBelong": "SH古北中心",
+    "note": "128课时",
+    "action": "",
+    "date": "2018-08-13",
+    "id":"115"
+  }]
+}

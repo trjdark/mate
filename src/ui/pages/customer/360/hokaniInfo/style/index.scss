@@ -1,0 +1,22 @@
+.hokaniInfo {
+
+  .margin-top {
+    margin-top: 30px;
+  }
+
+  .pane-wrapper {
+    .btn {
+      margin: 15px 0px 20px 30px;
+    }
+    .first-row {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+    }
+    .last-row {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}

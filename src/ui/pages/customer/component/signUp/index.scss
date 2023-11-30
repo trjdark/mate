@@ -1,0 +1,28 @@
+/**
+*Desc: 活动记录页面样式/报名弹框
+*User: Vicky.Yu
+*Date: 2018/12/12,
+*Time: 下午17:35
+*/
+
+#signUp-wrap{
+    width: 100%;
+    .c_baby_name{
+        font-weight: bold;
+        span{
+            font-weight: normal;
+        }
+    }
+    .table-wrap{
+        border: 1px solid #f0f3f2;
+        border-radius: 10px;
+        .ant-table-wrapper{
+            margin-bottom: 0.3rem;
+            .ant-table-thead{
+                thead{
+                    background: #ebf1f2;
+                }
+            }
+        }
+    }
+}

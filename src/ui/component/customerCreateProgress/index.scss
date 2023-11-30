@@ -1,0 +1,59 @@
+@import "@/style/func.scss";
+$progressBorderColor: rgba(56,91,99,0.2);
+$colItemHeight: transRem(40px);
+
+.gym-customer-create-progress {
+
+    margin-bottom: 20px;
+    border-top-right-radius: $colItemHeight/2;
+    border-bottom-right-radius: $colItemHeight/2;
+    border-top-left-radius: $colItemHeight/2;
+    border-bottom-left-radius: $colItemHeight/2;
+    box-shadow: 0 0 3px 3px rgba(56,91,99,0.1);
+
+    .colitemWrapper {
+        height: 100%;
+        flex: 1;
+        height: $colItemHeight;
+    }
+
+    .colitem {
+        height: 100%;
+        border: 1px solid $progressBorderColor;
+        text-align: center;
+        line-height: $colItemHeight;
+        color: #666666;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-top-right-radius: $colItemHeight/2;
+        border-bottom-right-radius: $colItemHeight/2;
+        background-color: white;
+    }
+
+    .whiteBg {
+        background-color: white;
+    }
+
+    .noneBg {
+        background-color: none;
+    }
+
+    .colitemWrapper:first-child {
+        border-top-left-radius: $colItemHeight/2;
+        border-bottom-left-radius: $colItemHeight/2;
+        .colitem{
+            border-top-left-radius: $colItemHeight/2;
+            border-bottom-left-radius: $colItemHeight/2;
+        }
+    }
+
+    .selected {
+        background-color: #009CBD;
+        color: white;
+    }
+
+    .wrapperBg {
+        background-color: #009CBD;
+    }
+}

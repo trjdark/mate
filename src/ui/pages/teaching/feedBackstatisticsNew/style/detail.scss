@@ -1,0 +1,49 @@
+/**
+ * desc:
+ * User: Vicky.Yu
+ * Date: 2020/9/28
+ * Time: 下午3:15
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+.manage-detail{
+    padding: 13px 0;
+    color: #000;
+    
+}
+.gym-feedBack-table{
+    border: 1px solid #EBEFF2;
+    border-radius: 10px 10px 0 0;
+    width: 330px;
+    z-index: 10000;
+    .gym-feedBack-table-title {
+        display: flex;
+        background: #ECEFF2;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #000000;
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+        }
+    }
+    .gym-feedBack-table-content {
+        display: flex;
+        text-align: center;
+        padding: 15px 0;
+        background: #fbfdff;
+        font-size: 14px;
+        color: #666666;
+        border-bottom: 1px solid #EBEFF2;
+        .content-left{
+            width: 50%;
+        }
+        .content-right{
+            width: 50%;
+        }
+    }
+}

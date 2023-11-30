@@ -1,0 +1,37 @@
+/**
+ * desc: 模版样式
+ * Date: 2018/8/3
+ * Time: 下午4:11
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+$contentBg: #f0f2f5;
+$siderWidth: 130px;
+
+.gym-layout-content {
+    display: flex;
+}
+
+.gym-sider {
+    width: $siderWidth;
+    background: $white;
+}
+
+.gym-content {
+    padding: transArray(20px);
+    width: 100%;
+    background: $contentBg;
+    &-alert{
+        position: absolute;
+        left: calc(50% - 325px);
+        width: 650px;
+        top: transRem(10px);
+        z-index: 99;
+    }
+    &-wrap {
+        &-bold {
+            font-weight:bold;
+        }
+    }
+}

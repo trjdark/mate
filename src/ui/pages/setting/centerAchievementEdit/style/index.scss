@@ -1,0 +1,53 @@
+@import "../../../../../style/func.scss";
+
+.gym-center-achievement {
+    .ant-form-item{
+        margin-right: 0;
+        & > .ant-form-item-label {
+            min-width: 5em;
+        }
+    }
+
+    &-center-set {
+        margin-bottom: transRem(30px);
+        .ant-form-item {
+            padding-left: transRem(15px);
+            &:first-child {
+                margin-right: transRem(39px);
+            }
+        }
+    }
+
+    &-gb-set {
+        padding-left: transRem(15px);
+        margin-bottom: transRem(24px);
+
+        .ant-form-item-label {
+            min-width: 4em;
+        }
+
+        &-connect {
+            margin: 0 transRem(16px);
+            font-size: 12px;
+            vertical-align: super;
+        }
+
+        &-remove {
+            font-size: transRem(18px);
+            margin-top: transRem(9px);
+            margin-left: transRem(10px);
+            color: #ccc;
+            cursor: pointer;
+        }
+    }
+
+    &-gather {
+        padding-left: transRem(370px);
+        font-size: 14px;
+        color: #000;
+    }
+
+    .gym-radius-btn {
+        margin-left: transRem(3em);
+    }
+}

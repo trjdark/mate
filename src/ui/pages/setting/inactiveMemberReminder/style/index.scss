@@ -1,0 +1,20 @@
+#gym-inactivemember-manage {
+    .gym-inactivemember-tip {
+        font-size: 16px;
+    }
+
+}
+
+#gym-inactivemember-add {
+    .gym-inactivemember-add-handle {
+        height         : 60px;
+        width          : 100%;
+        display        : flex;
+        justify-content: center;
+    }
+    .ant-checkbox{
+        .ant-checkbox-inner{
+          border-radius: 50%;
+        }
+      } 
+}

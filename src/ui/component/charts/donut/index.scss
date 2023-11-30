@@ -1,0 +1,35 @@
+@import "../../../../style/func.scss";
+.gym-charts-donut{
+    white-space: nowrap;
+    span {
+        vertical-align: middle;
+    }
+    &-circle{
+        display:inline-block;
+        width: 8px;
+        height:8px;
+        margin-right: 3px;
+        border-radius:100%;
+    }
+    &-guide {
+        &-title{
+            margin-bottom: transRem(6px);
+            font-size: transRem(14px);
+            color:#666;
+            text-align: center;
+        }
+        &-number {
+            font-size: 0;
+            color: #000;
+            text-align: center;
+            span {
+                &:first-child {
+                    font-size: transRem(18px);
+                }
+                &:last-child {
+                    font-size: transRem(14px);
+                }
+            }
+        }
+    }
+}

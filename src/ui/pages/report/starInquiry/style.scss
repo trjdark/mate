@@ -1,0 +1,14 @@
+.star-num {
+    &.ant-rate {
+        color: #009CBD;
+    }
+    &-chart {
+        height: 600px;
+        overflow-x: auto;
+        h3 {
+            padding: 30px;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}

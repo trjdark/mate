@@ -1,0 +1,18 @@
+/**
+ * desc: 审批页面样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/15
+ * Time: 下午4:03
+ */
+@import "../../style/func";
+@import "../../style/theme";
+
+.gym-contract-approval{
+    &-buttons{
+        padding: transArray(20px 0);
+        text-align: center;
+        .gym-button-xs{
+            margin: transArray(0 10px);
+        }
+    }
+}

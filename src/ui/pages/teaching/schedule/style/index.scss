@@ -1,0 +1,497 @@
+/**
+*Desc: 教学管理样式
+*User: Debby.Deng
+*Date: 2018/12/3,
+*Time: 上午10:58
+*/
+
+.gym-teaching-schedule {
+    .ant-form-item-control input {
+        width: 200px;
+    }
+
+    &-add {
+        position: relative;
+
+        .ant-select {
+            width: 200px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+
+        .ant-form-item {
+            min-width: 400px;
+        }
+
+        &-room {
+            margin-bottom: 0;
+        }
+    }
+
+    .ant-form-item label {
+        margin-left: 20px;
+    }
+
+    &-week {
+        .ant-select {
+            width: 200px;
+        }
+
+        padding: 15px;
+        border-radius: 20px;
+
+        &-outer {
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+
+    &-table-sider {
+        padding-left: 50px;
+    }
+
+    &-temporary {
+        padding: 15px;
+
+        .gym-color-table-title {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+
+        &-gym-guard button {
+            right: 10px;
+            top: 20px;
+        }
+    }
+
+    //签到表样式
+    &-signin {
+        padding: 15px;
+
+        &-table-sider {
+            padding-left: 50px;
+
+            .ant-table-tbody > tr:hover td {
+                background: transparent;
+            }
+
+            table {
+                border-collapse: collapse;
+
+                th {
+                    height: 42px;
+                }
+
+                th, td {
+                    padding: 0;
+                    border: 1px solid #EDF0F2;
+                }
+            }
+        }
+
+        &-name {
+            display: inline-block;
+            width: 40%;
+            text-align: right;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+        &-bookWay {
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+
+        &-status {
+            display: inline-block;
+            width: 40%;
+            text-align: left;
+            vertical-align: middle;
+
+        }
+
+        &-students {
+            color: #000;
+            padding: 5px;
+
+            &-active {
+                color: #ef7421;
+                font-weight: bold;
+            }
+
+            &-common-color {
+                color: #666;
+                font-size: 12px;
+            }
+
+            &-light-color {
+                color: #999;
+                font-size: 12px;
+            }
+
+        }
+
+        &-warning {
+            color: red;
+        }
+
+        &-print { //签到打印
+            border-radius: 15px;
+
+            &-course {
+                position: absolute;
+                font-size: 30px;
+                right: 20px;
+                top: 0;
+            }
+        }
+
+        &-bulk-print {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    //签到表详情页面
+    &-signinfo {
+        &-delete-content{
+            margin:35px 0 40px;
+            font-size:16px;
+        }
+        &-checkbox {
+            &-disabled {
+                display: none;
+            }
+        }
+
+        &-table {
+            border: 1px solid #EDF0F2;
+            border-top: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+
+            .ant-col-12:nth-child(2) {
+                border-left: 1px solid #EDF0F2;
+            }
+        }
+
+        .gym-table-part {
+            overflow: hidden;
+            border-top: 1px solid #EDF0F2;
+
+            & > p {
+                float: left;
+                line-height: 40px;
+                height: 40px;
+                padding-left: 30px;
+
+                & > span {
+                    margin-right: 15px;
+                }
+
+                &.bgGrey {
+                    width: 150px;
+                    background: #F4F8FB;
+                    border-right: 1px solid #EDF0F2;
+                }
+            }
+        }
+
+        &-status {
+            border-bottom: 1px solid #EDF0F2;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+            border-left: 1px solid #EDF0F2;
+
+            & li {
+                flex: 1;
+                border-right: 1px solid #EDF0F2;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+
+        &-detail {
+            padding: 30px 15px 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        &-list {
+            padding: 30px 15px 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+
+            &-btn-group {
+                padding-left: 30px;
+            }
+
+            .ant-table-content {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    &-choose-baby { //选择宝宝
+        position: relative;
+        background-color: #fff;
+
+        .gym-table-wrap {
+            height: 400px;
+            overflow-y: auto;
+        }
+    }
+
+    .ant-tabs-card-content {
+        box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+        margin: 2px 5px 0 5px;
+    }
+}
+
+.gym-color-table {
+    float: left;
+
+    &-monday {
+        .gym-color-table-title {
+            border-top-left-radius: 10px;
+        }
+
+        .ant-table-body {
+            table {
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &-sunday {
+        .gym-color-table-title {
+            border-top-right-radius: 10px;
+        }
+
+        .ant-table-body {
+            table {
+                border-bottom-right-radius: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &-header {
+        display: flex;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        padding: 2px;
+        font-size: 12px;
+        word-break: break-all;
+    }
+
+    &-square-temporary {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        word-break: break-all;
+
+        &-left {
+            margin-right: 20px;
+        }
+    }
+
+    &-square-week {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &-word {
+            font-size: 18px;
+
+            &-long {
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+    }
+
+    &-plus {
+        position: relative;
+        left: 1px;
+        width: calc(100% - 3px);
+        height: 48px;
+        line-height: 48px;
+        border: 1px solid #004976;
+        cursor: pointer;
+        background: #EBEFF3;
+        color: #004976;
+        box-sizing: border-box;
+    }
+
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        padding: 0;
+    }
+
+    .ant-table-tbody > tr:hover td {
+        background: transparent;
+    }
+
+    .ant-table-tbody > tr td:hover {
+
+    }
+
+    &-title {
+        height: 46px;
+        line-height: 46px;
+        background: #EBEFF3;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    & table {
+        thead th {
+            height: 42px;
+            border: 1px solid #EDF0F2;
+            text-align: center;
+            color: #666;
+        }
+
+        display: inline-block;
+        border-collapse: collapse;
+
+        & tr td {
+            width: 80px;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px solid #EDF0F2;
+        }
+    }
+
+    &:not(:last-of-type) {
+        & tr td:last-of-type, & tr th:last-of-type {
+            border-right-color: #e0e0e0;
+        }
+    }
+
+    &:not(:first-of-type) {
+        & tr td:first-of-type, & tr th:first-of-type {
+            border-left-color: #e0e0e0;
+        }
+    }
+
+    &-block { //占全屏幕
+        float: none;
+
+        & table {
+            thead, tbody {
+            }
+
+            thead th {
+                width: 250px;
+                height: 42px;
+            }
+
+            & tr td {
+                width: 250px;
+            }
+        }
+    }
+}
+
+.gym-color-table.active {
+    .gym-color-table-title {
+        background: #009CBD;
+        color: #fff;
+    }
+
+    .ant-table {
+        tr th {
+            background: #E3F9FF;
+        }
+
+        background: #E3F9FF;
+    }
+}
+
+.gym-time-sider {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    & li {
+        &:first-child {
+            margin-top: 88px;
+        }
+
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@media print {
+    .gym-teaching-print-title {
+        color: #000; // 覆盖框架样式，防止打印发灰
+    }
+    .gym-table-component {
+        -webkit-print-color-adjust: exact;
+
+        table {
+            border-collapse: collapse;
+            border-radius: 0;
+
+            td, th {
+                border: 1px solid #000;
+            }
+        }
+
+        .ant-table-body {
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 0;
+        }
+
+        .ant-table-tbody, .ant-table-thead {
+            font-size: 12px;
+        }
+
+        .ant-table-thead {
+            & > tr > th {
+                color: #000; // 覆盖框架样式，防止打印发灰
+                &:first-child {
+                    width: 50px;
+                    padding-left: 0;
+                    border-top-left-radius: 0;
+                }
+            }
+
+            & > tr > th:last-child {
+                border-top-right-radius: 0;
+            }
+        }
+
+        .ant-table-tbody {
+            & > tr > td:first-child {
+                padding-left: 0;
+                width: 50px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,27 @@
+/*
+table 上方tab路由样式
+*/
+$themeColor: #009cbd;
+@import "@/style/func.scss";
+
+.gym-square-tab {
+    margin: transArray(0 45px);
+    &-li {
+        background: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 25px;
+        margin-right: 10px;
+        border: 1px solid #ebeff3;
+        cursor:pointer;
+    }
+    &-li:hover{
+        color:$themeColor;
+    }
+    &-li.active {
+        background: $themeColor;
+        color: #fff;
+    }
+}

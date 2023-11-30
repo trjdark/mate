@@ -1,0 +1,99 @@
+@import "../../../../../style/theme.scss";
+.gym-r-course-popover{
+    .ant-popover-inner-content{
+        width:auto;
+        max-width: transRem(300px);
+    }
+}
+.gym-r-course-modal{
+    display: flex;
+    &-part{
+        width:50%;
+    }
+    &-item{
+        display: flex;
+        flex-wrap: wrap;
+        &-part{
+            width: 40%;
+            margin: 15px;
+            border: 4px;
+            box-shadow:  0 0 2px 2px rgba(56,91,99,0.1);
+            cursor:pointer;
+            :hover{
+                box-shadow:  0 0 2px 2px rgba(0,184,217,0.2);
+            }
+            :active{
+                box-shadow:  0 0 4px 4px rgba(0,184,217,0.4);
+
+            }
+        }
+        &-view{
+            width:90%;
+            height: 600px;
+            overflow: scroll;
+            margin-top: 15px;
+        }
+    }
+    &-plan-menu{
+        border:none;
+        font-size: 20px;
+    }
+    &-upload{
+        width: 100%;
+        height: 60px;
+        border: 1px solid $color666;
+        background: $colorDDD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        &-file{
+            position: absolute;
+            top:0;
+            opacity: 0;
+        }
+    }
+    &-music{
+        display: flex;
+        align-items: center;
+        border: 1px solid $colorDDD;
+        border-radius: 4px;
+        padding: 15px;
+        &-icon{
+            color: #f60;
+            font-size: 30px;
+            margin-right: 15px;
+        }
+        &-title{
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &-video{
+        position: relative;
+        &-icon{
+            font-size: transRem(40px);
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: transRem(-20px);
+            margin-top: transRem(-20px);
+            color: #f60;
+            background: #fff;
+            border-radius: transRem(40px);
+        }
+    }
+    &-action{
+        display: flex;
+        justify-content: space-around;
+        //background: $color999;
+        &-span{
+            cursor: pointer;
+            color: $themeColor;
+            font-size: 12px;
+        }
+    }
+}

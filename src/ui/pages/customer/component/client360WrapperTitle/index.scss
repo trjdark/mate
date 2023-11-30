@@ -1,0 +1,47 @@
+/**
+ * desc: 360 title
+ * User: dave
+ * Date: 2018/11/02
+ * Time: 下午1:42
+ */
+@import '@/style/web.scss';
+@import "@/style/theme.scss";
+
+.gym-page-title-360 {
+    position: relative;
+    font-size: 18px;
+    font-family: $fontFamily;
+    margin-bottom: 10px;
+    &-icon{
+        font-size: 20px;
+        color: $themeColor;
+    }
+
+    .title {
+      position: relative;
+    }
+    .news {
+      position: absolute;
+      top: -10px;
+      right: -25px;
+      color:white;
+      text-align: center;
+      width: 24px;
+      height: 24px;
+      line-height: 23px;
+      font-size: 14px;
+    }
+    .title-arrow{
+      position: absolute;
+      right:20px;
+      top:0px;
+      .name{
+        margin-right: 4px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .iconfont{
+        font-size: 10px;
+      }
+    }
+}

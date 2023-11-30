@@ -1,0 +1,136 @@
+@import "@/style/func.scss";
+
+$wrapperBorderColor: #EBEFF2;
+$wrapperHeight: transRem(230px);
+$wrapperBorderRadius: 20px;
+
+.basicInfosWrapper {
+    min-height: $wrapperHeight;
+    border: 1px solid $wrapperBorderColor;
+    border-radius: 20px;
+    margin: 6px 6px 12px 6px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .basicRow1, .basicRow2 {
+        flex: 1;
+    }
+
+    .textCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #666666;
+        font-size: 12px;
+    }
+
+    .borderLeftRight {
+        border-left: 1px solid #EBEFF2;
+        border-right: 1px solid #EBEFF2;
+    }
+
+    .iconSize {
+        font-size: 28px;
+    }
+
+    .link {
+        color: #999999;
+        text-align: center;
+        cursor: pointer;
+        p {
+            color: #666666;
+        }
+    }
+    .link-active {
+        color: #009cbd;
+
+        p {
+            color: #009cbd;
+        }
+    }
+
+    .link:hover {
+        color: #009cbd;
+
+        p {
+            color: #009cbd;
+        }
+    }
+    .call-record-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .call-record-more{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+.selecClassWrapper {
+    border: 1px solid $wrapperBorderColor;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 6px 6px 12px 6px;
+
+    .iconSize {
+        font-size: 28px;
+    }
+
+    .basicRow1 {
+        height: $wrapperHeight/3;
+    }
+
+    .textCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #666666;
+        font-size: 12px;
+    }
+
+    a {
+        text-align: center;
+    }
+
+    .link {
+        color: #999999;
+
+        p {
+            color: #666666;
+        }
+    }
+
+    .link:hover {
+        color: #009cbd;
+
+        p {
+            color: #009cbd;
+        }
+    }
+
+    .disabled {
+        color: #cdcdcd;
+        &:hover {
+            color: #cdcdcd;
+            p {
+                color: #cdcdcd;
+            }
+        }
+        p {
+            color: #cdcdcd;
+        }
+    }
+}

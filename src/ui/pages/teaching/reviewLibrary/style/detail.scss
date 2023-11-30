@@ -1,0 +1,65 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2020/7/20
+ * Time: 下午2:45
+ */
+@import "../../../../../style/theme.scss";
+.gym-review-detail{
+    &-main{
+        border-radius: transRem(10px);
+        overflow: hidden;
+        border: 1px solid $borderColor;
+        &-title{
+            text-align: center;
+            font-weight: bold;
+            line-height: transRem(50px);
+            background: $borderColor;
+        }
+        &-row{
+            display: flex;
+        }
+        &-col{
+            width: -webkit-fill-available;
+            border-bottom: 1px solid $borderColor;
+            border-right: 1px solid $borderColor;
+            margin: 0px  -1px -1px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: transRem(10px);
+            &-text{
+                line-height: 32px;
+            }
+            &-action{
+                position: absolute;
+                right: 0;
+                transform: translateX(-50%);
+                display: none;
+                &-icon{
+                    cursor: pointer;
+                    &:hover{
+                        color: $themeColor;
+                    }
+                }
+            }
+            &-input{
+                width: transRem(100px);
+            }
+            &.th{
+                font-weight: bold;
+            }
+            &:first-child{
+                font-weight: bold;
+            }
+            &:hover{
+                background: $backgroundColor;
+                cursor: pointer;
+                .gym-review-detail-main-col-action{
+                    display: block;
+                }
+            }
+        }
+    }
+}

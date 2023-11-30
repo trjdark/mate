@@ -1,0 +1,45 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "title":"OA系统",
+      "key": "oa",
+      "description":"OA系统OA系统OA系统OA系统OA系统"
+    }, {
+      "id": "2",
+      "key": "mate",
+      "title":"MATE系统",
+      "description":"MATE系统MATE系统MATE系统MATE系统MATE系统"
+    }, {
+      "id": "3",
+      "key": "mdm",
+      "title":"MDM系统",
+      "description":"MDM系统MDM系统MDM系统MDM系统MDM系统MDM系统"
+    }, {
+      "id": "4",
+      "key": "pdm",
+      "title":"PDM系统",
+      "description":"PDM系统PDM系统PDM系统PDM系统PDM系统PDM系统PDM系统"
+    }, {
+      "id": "5",
+      "title":"OB系统",
+      "key": "ob",
+      "description":"OA系统OA系统OA系统OA系统OA系统"
+    }, {
+      "id": "6",
+      "key": "oc",
+      "title":"OC系统",
+      "description":"MATE系统MATE系统MATE系统MATE系统MATE系统"
+    }, {
+      "id": "7",
+      "key": "d",
+      "title":"d系统",
+      "description":"MDM系统MDM系统MDM系统MDM系统MDM系统MDM系统"
+    }, {
+      "id": "8",
+      "key": "e",
+      "title":"E系统",
+      "description":"PDM系统PDM系统PDM系统PDM系统PDM系统PDM系统PDM系统"
+    }
+  ]
+}

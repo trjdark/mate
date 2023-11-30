@@ -1,0 +1,119 @@
+/**
+ * desc: 添加修改样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/9/19
+ * Time: 下午2:00
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+ #gym-lesson-material-add-edit {
+    .labelMonStartToEnd {
+      &:before {
+        display: inline-block;
+        margin-right: 4px;
+        content: "*";
+        font-family: SimSun;
+        line-height: 1;
+        font-size: 14px;
+        color: #f5222d;
+      }
+      &:after {
+        content: ":";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 39px;
+    }
+
+    .formMonStartToEnd {
+      display: flex;
+    }
+
+    .inputWidth {
+      width: 200px;
+    }
+
+    .monthvalue {
+      display: flex;
+      .label {
+        width:33.33%;
+        text-align: right;
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.85);
+        &:before {
+          display: inline-block;
+          margin-right: 4px;
+          content: "*";
+          font-family: SimSun;
+          line-height: 1;
+          font-size: 14px;
+          color: #f5222d;
+        }
+      }
+      .content {
+        display: flex;
+      }
+    }
+ }
+
+.gym-lesson-detail-list-button{
+    margin-left: transRem(40px);
+    margin-bottom: transRem(25px);
+}
+
+.gym-table-colan-td {
+    padding: 0 transRem(35px) !important;
+}
+
+.gym-table-colan {
+    .ant-table-body {
+        border-radius: 12px;
+    }
+
+    .gym-table-component .ant-table-tbody > tr:first-child > td:first-child {
+        background-color: #F3F7FB !important;
+    }
+}
+
+.gym-lesson-tab {
+    display: inline-block;
+    margin-left: 8px;
+
+    &-span {
+        text-align: center;
+    }
+
+    &-tooltip {
+
+    }
+}
+
+.gym-lesson-row {
+    &-level {
+        .ant-form-item-label {
+            width:31.6666666666%
+        }
+    }
+
+    &-month {
+        .ant-form-item-label {
+            width:37.6666666666%
+        }
+    }
+
+    &-button {
+        margin-left: 13px;
+        margin-bottom: 35px;
+    }
+}
+
+.gym-lesson-message-cancel {
+    width: 80px !important;
+    margin-left: 20px;
+}
+
+
+

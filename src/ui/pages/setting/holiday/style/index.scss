@@ -1,0 +1,24 @@
+/**
+ * desc:
+ * Date: 2018/8/15
+ * Time: 下午4:15
+ */
+
+.gym-holiday{
+  &-manage{
+    .ant-form-item {
+      display: flex;
+    }
+  }
+  &-add{
+      .ant-form-item-control-wrapper{
+          width: 200px;
+      }
+    .ant-form-item {
+      display: flex;
+    }
+    &-select{
+      width: 200px;
+    }
+  }
+}

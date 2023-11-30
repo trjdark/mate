@@ -1,0 +1,57 @@
+{
+  "data":[{
+      "key": 1,
+      "centerCode": "447",
+      "centerName": "金宝贝诸暨绿城中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "浙江省",
+      "city": "绍兴市"
+    },{
+      "key": 2,
+      "centerCode": "445",
+      "centerName": "武汉保利中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "湖北省",
+      "city": "武汉市"
+    },{
+      "key": 3,
+      "centerCode": "446",
+      "centerName": "金宝贝广州番禺祈福金谷中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "广东省",
+      "city": "广州市"
+    },{
+      "key": 4,
+      "centerCode": "645",
+      "centerName": "金宝贝济南经四路万达中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "上海市",
+      "city": "上海市"
+    },{
+      "key": 5,
+      "centerCode": "442",
+      "centerName": "金宝贝嘉兴南湖中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "浙江省",
+      "city": "嘉兴市"
+    },{
+      "key": 6,
+      "centerCode": "786",
+      "centerName": "金宝贝诸暨绿城中心",
+      "GI": "Rebecca",
+      "FOC": "Rebecca",
+      "area": "华东区",
+      "province": "浙江省",
+      "city": "嘉兴市"
+    }]
+}

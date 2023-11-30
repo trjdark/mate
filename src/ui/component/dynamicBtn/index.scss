@@ -1,0 +1,22 @@
+.gym-dynamic-btn{
+  display: inline-block;
+  width:150px;
+  min-height:30px;
+}
+.gym-dynamic-options{
+  width:150px;
+  border:1px solid #e8e8e8;
+  text-align: center;
+  z-index:2;
+  background:#fff;
+  border-radius:6px;
+  &-li{
+    height:32px;
+    line-height:32px;
+    cursor:pointer;
+    &:hover{
+      background:#b2e1eb;
+      color:#666;
+    }
+  }
+}

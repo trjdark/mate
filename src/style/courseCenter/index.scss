@@ -1,0 +1,69 @@
+/**
+ * desc:
+ * Date: 2018/8/14
+ * Time: 上午9:03
+ */
+@import "../theme";
+@import "../func";
+
+$marginBottom: transRem(25px);
+$tableSpanPadding: transArray(0 5px);
+
+.gym-center-course {
+  /***************管理***************/
+  &-manage{
+     table{
+      margin-bottom: $marginBottom;
+
+      .span-link{
+        padding: $tableSpanPadding;
+        cursor: pointer;
+      }
+    }
+  }
+  /***************促销***************/
+  &-promotion{
+      table{
+      margin-bottom: $marginBottom;
+    }
+    .ant-form-item {
+      display: flex;
+    }
+    .span-link{
+      padding: $tableSpanPadding;
+      cursor: pointer;
+      color: $themeColor;
+    }
+      .add {
+          margin-left: 45px;
+          margin-bottom: 30px;
+      }
+  }
+  /***************定价***************/
+  &-price{
+    table {
+        margin-bottom: $marginBottom;
+    }
+    .ant-form-item {
+      display: flex;
+    }
+    .span-link{
+      padding: $tableSpanPadding;
+      cursor: pointer;
+      color: $themeColor;
+    }
+
+    .inputWidth {
+      width: 200px;
+    }
+
+    .add {
+      margin-left: 45px;
+      margin-bottom: 30px;
+    }
+
+    .cancel {
+      margin-left: 5px;
+    }
+  }
+}

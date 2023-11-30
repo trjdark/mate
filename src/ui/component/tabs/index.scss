@@ -1,0 +1,46 @@
+/**
+*Desc: tab切换样式
+*User: Debby.Deng
+*Date: 2018/11/5,
+*Time: 下午3:13
+*/
+@import '@/style/theme.scss';
+.gym-tabs{
+    .ant-tabs{
+        overflow:visible;
+    }
+    .ant-tabs-content{
+        padding: 15px;
+        background: #fff;
+        border-radius: 20px;
+        border:1px solid #e8e8e8;
+        overflow-x:auto;
+        overflow-y:hidden;
+        @extend .shadow;
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar {
+        margin-bottom: 0;
+        border-bottom: none;
+        .ant-tabs-tab {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background:#fff;
+            margin:0 10px 0 0;
+            padding-left: 25px;
+            padding-right: 25px;
+            &:nth-child(1){
+                margin-left:45px;
+            }
+        }
+
+        .ant-tabs-tab-active {
+            background-color: #009CBD;
+            color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+    }
+
+
+}

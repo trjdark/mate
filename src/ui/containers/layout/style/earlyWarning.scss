@@ -1,0 +1,52 @@
+/**
+ * desc: 预警提示弹层
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/12/2
+ * Time: 上午10:28
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+.gym-early-warning-modal{
+    position: absolute;
+    z-index: 99;
+    background: $white;
+    width: transRem(550px);
+    padding: transRem(20px);
+    border: 1px solid $colorDDD;
+    right: transArray(5px);
+    bottom: transArray(5px);
+    display: none;
+    &.active{
+        display: block;
+    }
+    &-head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: transRem(10px);
+        &-title{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: transRem(18px);
+            .iconfont{
+                color: $themeColor;
+                font-size: transRem(30px);
+                margin-right: transRem(5px);
+            }
+        }
+        .close{
+            font-size: transRem(24px);
+            cursor: pointer;
+        }
+    }
+    &-content{
+        padding-left: transRem(20px);
+        &-text{
+            margin-bottom: transRem(5px);
+            .high-light{
+                color:$themeColor;
+            }
+        }
+    }
+}

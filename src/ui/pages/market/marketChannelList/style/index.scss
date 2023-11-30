@@ -1,0 +1,72 @@
+/**
+ * User: y
+ * Date: 2018/11/22
+ * Time: 下午17:39
+ */
+ #market-list-content{
+    background: #fff;
+    border-radius: 20px;
+    .ant-form-item-label{
+        width: 120px;
+    }
+    .ant-form-item{
+        margin-bottom: 30px;
+    }
+    .gym-button-xxs{
+        margin-left: 5px;
+    }
+    .ant-table-content{
+        margin-bottom: 0.89286rem;
+    }
+ }
+// 新建
+.market-list-add{
+    background: #009cbd;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.market-table-content{
+    margin-top: 0.5rem;
+}
+
+// 状态色
+.market-colorGray{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #b7b3b3;
+    display: inline-block;
+}
+.market-colorRed{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #DA291C;
+    display: inline-block;
+}
+.market-colorBlue{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #009CBD;
+    display: inline-block;
+}
+
+.market-colorGreen{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #40C1AC;
+    display: inline-block;
+}
+.market-approval-status span:nth-child(2){
+    margin-left: 5px;
+}

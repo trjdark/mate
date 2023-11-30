@@ -1,0 +1,66 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2021/10/26
+ * Time: 下午2:08
+ */
+@import "../../../../../style/common.scss";
+.gym-account-bind{
+    &-info{
+        display: flex;
+        flex-wrap: wrap;
+        &-item{
+            display: flex;
+            width: 33%;
+            margin-bottom: 15px;
+            align-items: center;
+            &-label{
+                width: 150px;
+                text-align: right;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            &-context{
+
+            }
+        }
+    }
+    &-icon {
+        color: rgba(0,0,0,.25);
+    }
+    &-check {
+        cursor:pointer
+    }
+    &-title {
+        margin-left: 10px;
+        font-size: 14px;
+        color: $success;
+        &-err {
+            color: $error;
+        }
+    }
+    // 小圆点样式
+    &-status-point {
+        position: relative;
+        padding-left: 12px;
+        line-height: 40px;
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $success;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &-status-point-err {
+        &::before {
+            background-color: $error;
+        }
+    }
+
+}

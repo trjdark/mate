@@ -1,0 +1,44 @@
+@import "@/style/func.scss";
+
+.component-steps {
+  .ant-steps-item {
+    height: transRem(52px);
+  }
+
+  .ant-steps-item-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icon-wrapper {
+    background-color: #009CBD;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+  .done{
+    color: #b2e1eb;
+      &.none{
+          color: #cccccc;
+      }
+  }
+  .none{
+    color: #cccccc;
+  }
+
+  .nullInfo {
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .nullInfoIcon {
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+  }
+
+}

@@ -1,0 +1,36 @@
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+@import "../../../../../style/web";
+
+.gym-collapse-lesson {
+    border:1px solid #EAEEF2;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 25px 20px;
+
+    &-mainTheme {
+        display: inline-flex;
+    }
+
+    &-span {
+        position: absolute;
+        margin-left: 150px;
+        margin-top: 6px;
+        z-index: 10;
+    }
+
+    &-icon {
+        color: #009BBC;
+        z-index: 10;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+}
+
+
+
+
+
+
+
+

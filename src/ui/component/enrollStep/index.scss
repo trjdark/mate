@@ -1,0 +1,19 @@
+.steps-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    min-height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.steps-action {
+    margin-top: 24px;
+    .ant-btn{
+        width: 120px;
+        height: 40px;
+        border-radius: 27px;
+        margin-left: 30px;
+    }
+}

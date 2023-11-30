@@ -1,0 +1,20 @@
+/**
+ * desc: 坐席分批
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/12/14
+ * Time: 下午5:36
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+.gym-telephone-land-line-add{
+    .ant-form-item {
+        display: flex;
+    }
+    .gym-telephone-land-line-add-select{
+        width: 200px;
+    }
+    .ant-form-item-label{
+        width: transArray(120px);
+    }
+}

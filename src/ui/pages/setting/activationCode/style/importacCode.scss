@@ -1,0 +1,26 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2020/7/8
+ * Time: 下午3:24
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+.gym-import-code-analysis{
+    display: flex;
+    &-excel{
+        display:inline-block;
+        width: 105px;
+        overflow: hidden;
+        height: 30px;
+        button{
+            letter-spacing:5px;
+            text-indent: 5px;
+        }
+    }
+    &-buttons{
+        text-align: center;
+        padding-top: transRem(200px);
+    }
+}

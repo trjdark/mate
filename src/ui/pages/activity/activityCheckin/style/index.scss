@@ -1,0 +1,64 @@
+.checkin-btn-group {
+    overflow: hidden;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    button {
+        margin: 0 7px;
+    }
+}
+
+.content-modal-title {
+    padding: 15px 0 15px 5px;
+}
+
+.content-modal-wrap {
+    .ant-modal-header, .ant-modal-body {
+        padding: 15px;
+        border-bottom: 0;
+    }
+    .ant-modal-body {
+        padding-top: 0;
+    }
+    .steps-action {
+        text-align: center;
+        margin: 30px 0 15px;
+    }
+    .ant-steps {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #009cbd;
+        padding: 0 45px;
+    }
+    .ant-steps-item {
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .ant-steps-item-process .ant-steps-item-title {
+        font-weight: normal;
+    }
+    .ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-title {
+        color: #009cbd;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon {
+        border-color: rgb(205,205,205);
+        background-color: rgb(205,205,205);
+        .ant-steps-icon {
+            color: #fff;
+        }
+    }
+}
+
+.choose-baby-wrap {
+    width: 100%;
+    .paymode {
+        text-align: left;
+        text-indent: 30px;
+        margin-bottom: 10px;
+    }
+}

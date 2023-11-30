@@ -1,0 +1,15 @@
+/**
+ * desc: 角色列表
+ * Date: 2018/8/21
+ * Time: 下午1:36
+ */
+@import "../func";
+
+$createButtonMarginBottom: transRem(15px);
+
+.gym-role-list {
+  &-create{
+    display: block;
+    margin-bottom: $createButtonMarginBottom;
+  }
+}

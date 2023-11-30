@@ -1,0 +1,234 @@
+/**
+ * desc: 新建合同
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2018/11/3
+ * Time: 上午10:24
+ */
+
+@import "../theme";
+@import "../func";
+
+$labelWidth: 150px;
+$controlWrapperWidth: 330px;
+$marginOffset: 1px;
+
+.gym-contract-add{
+    &-form{
+        &-wrap{
+            border-bottom: $marginOffset solid #ebf1f2;
+            border-left: $marginOffset solid #ebf1f2;
+            border-right: $marginOffset solid #ebf1f2;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .ant-form-item{
+                display: flex;
+                margin-bottom: -$marginOffset;
+                margin-left: -$marginOffset;
+                &.span{
+                    .ant-form-item-control-wrapper{
+                        margin-left: -$marginOffset;
+                    }
+                }
+            }
+            .ant-form-item-label{
+                border-top: $marginOffset solid #ebf1f2;
+                border-bottom: $marginOffset solid #ebf1f2;
+                border-left: $marginOffset solid #ebf1f2;
+                min-width: 165px;
+                max-width: 165px;
+                text-align: left;
+                padding-left: 30px;
+                background: #F4F8FB;
+            }
+
+
+
+            .ant-form-item-control-wrapper{
+                border-top: $marginOffset solid #ebf1f2;
+                border-bottom: $marginOffset solid #ebf1f2;
+                border-left: $marginOffset solid #ebf1f2;
+                margin-left: -$marginOffset;
+                padding: 0 25px 0 36px;
+                width: 100%
+            }
+            // 合同编码
+            &-code{
+                &-centerId{
+                    width: auto;
+                    text-align: left;
+                }
+                &-text{
+                    width: 200px !important;
+                }
+            }
+            // 礼物标签
+            &-gift{
+                display: inline-block;
+                background: #F1F2F4;;
+                margin-right: transRem(5px);
+                height: transRem(22px);
+                line-height: transRem(22px);
+                text-align: center;
+                padding: transArray(0 10px);
+                border-radius: transRem(3px);
+            }
+            &-preferential{
+                color: $themeColor;
+            }
+        }
+        .gym-contract-add-gift{
+            cursor: pointer;
+            color: $themeColor;
+        }
+    }
+    &-info{
+        height: 50px;
+        line-height: 50px;
+        padding-left: 30px;
+        background: #E3F9FF;
+    }
+}
+
+// pr礼品弹框
+.gym-contract-product-modal{
+    .ant-modal-header{
+        border-bottom: none;
+    }
+    .ant-modal-body{
+        padding: 0 24px;
+    }
+    .ant-modal-footer{
+        border-top: none;
+    }
+    &-form{
+        height: transRem(200px);
+        overflow: auto;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+    }
+    &-table{
+        width: 100%;
+        overflow: hidden;
+        th{
+            background: $borderColor;
+            padding: transArray(7px 20px);
+        }
+
+        td{
+            padding: transArray(7px 20px);
+        }
+
+        &-type{
+            display: flex;
+            line-height: 32px;
+            &-label{
+                text-align: right;
+            }
+        }
+        &-name{
+            width: transRem(200px);
+        }
+        &-num{
+            width: transRem(180px);
+            line-height: 32px;
+
+        }
+        &-input-number{
+            width:50px;
+        }
+        &-close{
+            margin-left: transRem(10px);
+            font-size: transRem(16px);
+            color: $color999;
+            cursor: pointer;
+        }
+    }
+    &-buttons{
+        text-align: center;
+        margin-top: transRem(30px);
+    }
+    &-item{
+        display: flex;
+        &-select{
+            width: 400px !important;
+        }
+    }
+}
+
+.contract-thead {
+    background-color: #EBEEF3;
+    color: #666666;
+
+    .ant-form-item-label {
+        background-color: #EBEEF3;
+        color: #000000;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.contract-thead-left {
+        border-top-left-radius: 10px;
+
+}
+
+.contract-thead-right {
+        border-top-right-radius: 10px;
+}
+
+.topLeft{
+    .ant-form-item-label {
+        border-top-left-radius: 10px;
+    }
+}
+
+.topRight{
+    .ant-form-item-control-wrapper {
+        border-top-right-radius: 10px;
+    }
+}
+
+.bottomLeft{
+    .ant-form-item-label {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.bottomRight{
+    .ant-form-item-control-wrapper {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.validate-form{
+    .ant-form-item-children {
+        display: inline-block;
+    }
+
+    .ant-form-explain {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+.ht50 {
+    .ant-form-item-label {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .ant-form-item-control-wrapper {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .ant-form-item-control {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+.gym-alert{
+    border-radius: 10px;
+}
+

@@ -1,0 +1,63 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2021/1/4
+ * Time: 下午3:03
+ */
+@import "../../../../../style/func.scss";
+@import "../../../../../style/theme.scss";
+
+$colItemHeight: transRem(40px);
+$progressBorderColor: rgba(56,91,99,0.2);
+
+.gym-customer-create-progress-bar{
+    display: flex;
+    margin-bottom: transRem(20px);
+    border-radius: transRem(20px);
+    height: $colItemHeight;
+    line-height: $colItemHeight;
+    justify-content: space-between;
+    &-item{
+        text-align: center;
+        width: -webkit-fill-available;
+        border-radius: $colItemHeight/2;
+        background-color: white;
+        box-shadow: 0 0 3px 3px rgba(56,91,99,0.1);
+        margin-left: transRem(10px);
+        &.selected{
+            background-color: #009CBD;
+            color: white;
+        }
+        &:first-child{
+            border-top-left-radius: $colItemHeight/2;
+            border-bottom-left-radius: $colItemHeight/2;
+            margin-left: 0;
+        }
+    }
+}
+
+.gym-customer-create-tabs{
+    position: relative;
+    .ant-tabs-content {
+        box-shadow: 0 0 3px 3px rgba(56,91,99,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+    &-button{
+        width: 100%;
+        text-align: center;
+    }
+    &-add{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &-log{
+        position: absolute;
+        top: 0;
+        right: 100px;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "treeData":[{
+    "title": "PC功能",
+    "key": "firList0",
+    "children": [{
+      "title": "客户功能",
+      "key": "secList00",
+      "children": [
+        { "title": "客户设置", "key": "trilist000" },
+        { "title": "加盟商设置", "key": "trilist001" },
+        { "title": "供应商设置", "key": "trilist002" }
+      ]
+    }, {
+      "title": "市场功能",
+      "key": "secList01",
+      "children": [
+        { "title": "销售管理", "key": "trilist010" },
+        { "title": "市场趋势", "key": "trilist011" }
+      ]
+    }, {
+      "title": "合同功能",
+      "key": "secList02",
+      "children": [
+        { "title": "合同管理", "key": "trilist020" },
+        { "title": "延期设置", "key": "trilist021" },
+        { "title": "废除合同", "key": "trilist022" }
+      ]
+    }]
+  }]
+}

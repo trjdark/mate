@@ -1,0 +1,22 @@
+/**
+ * desc: toolTii样式
+ * User: Lyon.li@gymboglobal.com
+ * Date: 2018/1/23
+ * Time: 上午10:38
+ */
+.gym-layout-content {
+    .ant-tooltip-inner {
+        font-size: transRem(14px);
+        color: #999;
+        background-color: #fff;
+        box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.45);
+        position: relative;
+    }
+    .ant-tooltip-placement-top .ant-tooltip-arrow {
+        border-top-color: rgba(255, 255, 255, 0.75);
+        z-index: 2;
+    }
+    .ant-tooltip-placement-bottom .ant-tooltip-arrow {
+        border-bottom-color: #ebeff2;
+    }
+}

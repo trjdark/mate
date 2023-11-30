@@ -1,0 +1,63 @@
+{
+  "data":[{
+    "key": 1,
+    "type": "课次产品",
+    "code": "128p",
+    "title": "128课时",
+    "duration": "24个月",
+    "count": "128",
+    "frequency": "",
+    "price": "30720.00",
+    "status": true
+  },{
+    "key": 2,
+    "type": "时段产品",
+    "code": "132P",
+    "title": "1Q2C",
+    "duration": "3个月",
+    "count": "128",
+    "frequency": "",
+    "price": "30720.00",
+    "status": true
+  },{
+    "key": 3,
+    "type": "课次产品",
+    "code": "132P",
+    "title": "128课时",
+    "duration": "12次/周",
+    "count": "12",
+    "frequency": "",
+    "price": "8200.00",
+    "status": true
+  },{
+    "key": 4,
+    "type": "时段产品",
+    "code": "128p",
+    "title": "128课时",
+    "duration": "24个月",
+    "count": "128",
+    "frequency": "",
+    "price": "30720.00",
+    "status": true
+  },{
+    "key": 5,
+    "type": "课次产品",
+    "code": "128p",
+    "title": "128课时",
+    "duration": "3个月",
+    "count": "12",
+    "frequency": "20次/周",
+    "price": "8200.00",
+    "status": false
+  },{
+    "key": 6,
+    "type": "时段产品",
+    "code": "132P",
+    "title": "1Q2C",
+    "duration": "24个月",
+    "count": "128",
+    "frequency": "",
+    "price": "30720.00",
+    "status": true
+  }]
+}

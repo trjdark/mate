@@ -1,0 +1,129 @@
+@import "../../../../style/func.scss";
+@import "../../../../style/common.scss";
+
+.gym-dashboard {
+    &-ga-panel {
+        
+        &-explainLink {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .smallCard {
+            height: transRem(70px);
+        }
+
+        &-card {
+            height    : transRem(100px);
+            text-align: center;
+            position  : relative;
+
+            &.page-wrap {
+                padding: 0;
+            }
+
+            &-data {
+                display: flex;
+
+                &-item {
+                    flex       : 1;
+                    line-height: 1;
+                    overflow   : hidden;
+
+                    &-title {
+                        margin     : transRem(16px);
+                        font-size  : transRem(16px);
+                        font-weight: normal;
+                        color      : #666;
+                        line-height: normal;
+
+                        &-icon {
+                            margin-left: transRem(4px);
+                            font-size  : transRem(16px);
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        &-update {
+                            margin-left: transRem(6px);
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            transform:rotate(0);
+
+                            &.start {
+                                animation: toggle-up 0.3s;
+                            }
+
+                            &.end {
+                                animation: toggle-down 0.3s;
+                            }
+
+                            @keyframes toggle-up {
+                                100% {
+                                    transform: rotate(180deg);
+                                }
+                            }
+
+                            @keyframes toggle-down {
+                                100% {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+
+                        &.second {
+                            margin: transRem(8px);
+                        }
+
+                        .red {
+                            color: red;
+                        }
+                    }
+
+
+                    &-data {
+                        font-size: transRem(28px);
+                        color    : #000;
+
+                        .themeColor {
+                            color: #009cbd;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .red {
+                            color      : red;
+                            font-weight: 700;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .tableHead {
+            display: flex;
+
+            span {
+                display    : flex;
+                align-items: center;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .remarkIcon {
+            color: #666
+        }
+    }
+}

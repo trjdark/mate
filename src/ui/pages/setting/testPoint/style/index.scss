@@ -1,0 +1,24 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2021/5/17
+ * Time: 下午2:40
+ */
+.gym-test-point{
+    &-modal{
+        .ant-form-item {
+            display: flex;
+            margin-bottom: 0;
+            .ant-select.gym-form-item-select{
+                width: 500px;
+            }
+            textarea.ant-input{
+                width: 500px;
+            }
+        }
+        .ant-form-item-label{
+            width: 100px;
+        }
+    }
+
+}

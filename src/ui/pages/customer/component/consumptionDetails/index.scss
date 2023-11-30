@@ -1,0 +1,38 @@
+/**
+ * desc: 活动详情
+ * User: Vicky.yu@gymboglobal.com
+ * Date: 2018/11/22
+ * Time: 下午1:38
+ */
+ .ant-modal-content{
+    .ant-modal-header{
+        border-bottom: none;
+    } 
+   
+ }
+ .activity-details-content{
+    .activity-details{
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #ebeff2;
+        border-bottom: none;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            width: 100.1%;
+            td:nth-child(1){
+                background-color: #f4f8fb;
+                width: 150px;
+                box-sizing: border-box;
+            }
+            td{
+                padding: 10px 0;
+                text-indent: 1.8em;
+                box-sizing: border-box;
+                text-align: left;
+                border-bottom: 1px solid #ebeff3;
+            }
+        }
+        
+    }
+}

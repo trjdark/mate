@@ -1,0 +1,58 @@
+/**
+ * desc: 活动列表样式
+ * User: Vicky
+ * Date: 2018/12/11
+ * Time: 下午20:00
+ */
+
+#activity-list{
+    .activity-list-content{
+        background: #fff;
+        padding: 30px 15px;
+        border-radius: 20px;
+        .market-list-add{
+            width: 100px;
+        }
+        .ant-form{
+            margin-bottom: 10px;
+        }
+    }
+    // 状态圆点
+    .activity-colorGray{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #b7b3b3;
+        display: inline-block;
+    }
+    .activity-colorRed{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #DA291C;
+        display: inline-block;
+    }
+    .activity-colorBlue{
+        width: 6px;
+        height:6px;
+        border-radius: 50%;
+        background: #009CBD;
+        display: inline-block;
+    }
+    .activity-colorGreen{
+        width: 6px;
+        height:6px;
+        border-radius: 50%;
+        background: #40C1AC;
+        display: inline-block;
+    }
+    .activity-approval-status{
+        span:nth-child(2){
+            margin-left: 5px;
+        }
+    }
+    .gym-button-white{
+        margin-left: 5px;
+    }
+}
+ 

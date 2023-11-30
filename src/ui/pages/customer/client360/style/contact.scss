@@ -1,0 +1,141 @@
+@import "@/style/func.scss";
+@import "@/style/theme.scss";
+$wrapperBorderColor: #EBEFF2;
+$wrapperHeight: transRem(230px);
+$wrapperBorderRadius: 20px;
+
+.contactWrapper {
+  height: $wrapperHeight;
+  border: 1px solid $wrapperBorderColor;
+  border-radius: 20px;
+  margin: 6px;
+  margin-bottom: 12px;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .crossCenter {
+    height: transRem(60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #EBEFF2;
+    .searchWrapper {
+      height: transRem(30px);
+      line-height: transRem(30px);
+      text-align: center;
+      background-color: #009CBD;
+      border-radius: transRem(15px);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  .contact-item-wrapper {
+    flex: 1;
+  }
+  .scroll-contacts {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:vertical {
+        width: 11px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, .5);
+    }
+  }
+  .no-scroll-contacts {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .contactItem {
+    height: transRem(40px);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    .flexWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .type {
+      line-height: 20px;
+      border-radius: 10px;
+      background-color: rgba(0,156,189,.5);
+      color: #fff;
+      padding-left: 4px;
+      padding-right: 4px;
+      margin: 2px;
+      font-size: 12px;
+    }
+    .main, .call{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #009CBD;
+      color: #fff;
+      margin: 0 4px;
+      font-size: 12px;
+    }
+    .nomain{
+      background-color: #fff;
+    }
+  }
+  // 手机号眼睛睫毛
+  .iconSize {
+    font-size: 10px;
+    color: #009CBD;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  .eyeSize {
+    font-size: 20px;
+    color: #009CBD;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+  &-tooltip{
+      &-row{
+          display: flex;
+          width: transRem(240px);
+          padding: transRem(10px);
+          border-bottom: 1px solid $borderColor;
+      }
+      &-time{
+          width: 30%;
+          text-align: center;
+      }
+      &-remark{
+          width: 70%;
+          text-align: center;
+          word-break: break-all;
+      }
+      &-footer{
+          display: flex;
+          justify-content: flex-end;
+          font-size: 12px;
+      }
+  }
+}

@@ -1,0 +1,129 @@
+/**
+ * desc:
+ * Date: 2018/8/16
+ * Time: 下午2:14
+ */
+@import "../../../style/func";
+
+$inputWidth: 200px;
+
+.gym {
+    &-common-search-form {
+        overflow: hidden;
+    }
+
+    &-form-item-wrap {
+        float: left;
+        min-width: 33.3%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        &:nth-child(3n) + .gym-search-form-btn {
+            width: 100%;
+            max-width: $inputWidth;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &-search-form-btn {
+        width: 100%;
+        max-width: $inputWidth;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.gym-form-item {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin-bottom: 20px;
+
+    .ant-form-item-control-wrapper {
+        flex: 1;
+    }
+
+    .ant-form-item-children, .ant-calendar-picker {
+        display: inline-block;
+        width: 100%;
+        max-width: $inputWidth;
+    }
+    .ant-calendar-picker-input.ant-input {
+        width: 100%;
+    }
+
+    .ant-calendar-range-picker-input {
+        width: 44%;
+    }
+    .ant-calendar-range-picker-separator {
+        vertical-align: baseline;
+    }
+
+    .ant-form-item-label {
+        min-width: 95px;
+    }
+    .ant-input {
+        height: 30px;
+        max-width: $inputWidth;
+    }
+    .ant-select-selection--single {
+        height: 30px;
+    }
+    .ant-calendar-picker-clear, .ant-calendar-picker-icon {
+        right: 8px;
+    }
+
+    .gym-date-month-picker {
+        max-width: 120px;
+    }
+
+    &-month {
+        .gym-form-item {
+            max-width: 200px;
+        }
+    }
+
+    &-date {
+        display: flex;
+
+        .gym-form-item {
+            .ant-form-item-label {
+                width: 80px;
+            }
+        }
+
+        &-text {
+            display: inline-block;
+            text-align: center;
+            margin: 0 5px 24px 5px;
+            line-height: 34px;
+        }
+    }
+
+    .ant-form-item {
+        .ant-calendar-range-picker-input {
+            width: 44%;
+        }
+    }
+    .ant-input-number {
+        width: 120%;
+    }
+    &-checkbox {
+        width: transRem(1000px);
+        &-card {
+            border-radius: 5px;
+            width: 612px;
+            max-height: 800px;
+            &-list {
+                margin-right: 30px;
+            }
+        }
+        .ant-checkbox-group{
+            display: flex;
+            .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+                margin-left: 0;
+                display: block;
+            }
+        }
+    }
+}

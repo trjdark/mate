@@ -1,0 +1,179 @@
+@import "@/style/func.scss";
+
+$wrapperBorderColor: #EBEFF2;
+
+// 待办事项 样式
+.memoWrapper {
+    border: 1px solid $wrapperBorderColor;
+    border-radius: 20px;
+    margin: 6px;
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+
+    .ant-collapse {
+        border: none;
+        > .ant-collapse-item {
+            border: none;
+            background-color: white;
+            .ant-collapse-header {
+                padding: 0px;
+                .gym-page-title-360 {
+                    margin: 0px;
+                }
+            }
+            .ant-collapse-content {
+                border: none;
+                margin-top: 10px;
+                .ant-collapse-content-box {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    .new {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #009CBD;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .more {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        display: flex;
+        cursor: pointer;
+        color: #009CBD;
+        font-size: 12px;
+    }
+
+    .memoItemsWrapper {
+        padding-top: 10px;
+        .memoItemsFuxxingWrapper2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            bottom: 10px;
+            & > div {
+                margin: 0px 2px;
+            }
+            & > div:nth-child(2) {
+                margin: 0px 10px;
+            }
+            .memoItem {
+                border: solid 1px $wrapperBorderColor;
+                flex: 1;
+                height: transRem(160px);
+                border-radius: 15px;
+                text-align: left;
+                padding: transRem(12px);
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                word-break: break-all;
+                .title {
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    .theme {
+                        margin-left: 10px;
+                    }
+                    .iconSize {
+                        font-size: 23px;
+                        color: #009CBD;
+                    }
+                }
+                .contentWrapper {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    .content {
+                        color: #666666;
+                        display: block;
+                        display: -webkit-box;
+                        font-size: 14px;
+                        line-height: 1.4;
+                        height: 58.8px;
+                        -webkit-line-clamp: 3;
+                        /* autoprefixer: ignore next */
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .footer {
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #999999;
+                    img {
+                        height: 18px;
+                        width: 20px;
+                    }
+                }
+            }
+            .memoItem.selected {
+                border: 1px solid #009CBD;
+                .title {
+                    color: #009CBD;
+                }
+                .content {
+                    color: black;
+                }
+            }
+            .memoItemNone {
+                border: solid 1px $wrapperBorderColor;
+                flex: 1;
+                height: transRem(160px);
+                border-radius: 15px;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    margin-right: 20px;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+
+    .ant-carousel .slick-slide {
+        display: block;
+        text-align: center;
+        background: #fff;
+        overflow: hidden;
+        > div {
+            height: 100%;
+        }
+    }
+
+    .ant-carousel .slick-dots {
+        bottom: 0px;
+        & li {
+            background-color: #999999;
+            & button {
+                background-color: #999999;
+            }
+        }
+        & li.slick-active button {
+            background-color: #009CBD;
+        }
+    }
+}

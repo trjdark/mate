@@ -1,0 +1,18 @@
+/**
+*Desc: 上课签到带左右箭头切换日期选择样式
+*User: Debby.Deng
+*Date: 2018/12/3,
+*Time: 上午10:58
+*/
+
+.gym-teaching-slide-title{
+    height:48px;
+    line-height:48px;
+    background:#EBEFF3;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    &-icon{
+        color:#009CBD;
+        cursor:pointer;
+    }
+}

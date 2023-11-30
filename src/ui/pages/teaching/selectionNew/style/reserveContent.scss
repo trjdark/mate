@@ -1,0 +1,35 @@
+@import "@/style/func.scss";
+@import "@/style/theme.scss";
+.course-wrapper-table{
+    border: 1px solid #f0f3f2;
+    border-radius: 10px;
+    height: 300px;
+    overflow: scroll;
+    &-head{
+        background: #f4f6f8;
+        font-weight: bold;
+        display: flex;
+        padding: 10px 0;
+        &-item{
+            width: 25%;
+            text-align: center;
+        }
+    }
+    &-content{
+        display: flex;
+        &-all{
+            display: flex;
+            width: 100%;
+            border: 1px solid #f4f6f8;
+            align-items: center;
+            &-item {
+                width: 25%;
+                text-align: center;
+                padding: 5px 0
+            }
+            .about-course{
+                background: #f4f8fb;
+            }
+        }
+    }
+}

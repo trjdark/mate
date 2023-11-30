@@ -1,0 +1,36 @@
+.assign-records {
+
+  .inputWidth {
+    width: 200px;
+  }
+
+  .btn-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+  }
+
+  .reset {
+    margin-left: 10px;
+  }
+
+  .search-row {
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .table-row {
+    position: relative;
+    z-index: 2;
+  }
+
+  .vip-table-row {
+    margin-top: 20px;
+  }
+
+  .marginBottom20>.form-field-pair {
+    margin-bottom: 20px;
+  }
+}

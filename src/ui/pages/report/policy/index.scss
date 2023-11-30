@@ -1,0 +1,16 @@
+/**
+ * desc:
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2023/5/5
+ * Time: 下午5:02
+ */
+.gym-policy-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #EBEFF2;
+    margin-top: -1px;
+    &:nth-child(odd) {
+        background: #E9F6F7;
+    }
+}

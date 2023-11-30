@@ -1,0 +1,151 @@
+/**
+ * desc: 客户中心（新）样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2022/2/8
+ * Time: 下午2:48
+ */
+@import "../../../../../style/theme";
+
+.gym-client-center{
+    padding-top:15px;
+    &-common{
+        &-title{
+            border-top: 1px solid $borderColor;
+
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-high{
+        .gym-client-center-form{
+            &:nth-child(odd){
+                background: $backgroundColor;
+            }
+        }
+        &.none{
+            display: none;
+        }
+
+    }
+    &-form{
+        display: flex;
+        &-title{
+            color: $themeColor;
+            width: 80px;
+            padding: 10px 0px 0px 20px;
+            text-align: center;
+        }
+        &-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            width:calc(100% - 100px);
+            &-item{
+                width: 33%;
+                display: flex;
+                margin-bottom: 0;
+                align-items: center;
+                &.lg{
+                    width: 100%;
+                }
+                .ant-input{
+                    width: 200px;
+                }
+                .ant-checkbox-wrapper{
+                    margin-left: 8px;
+                }
+                .ant-checkbox-group{
+                    padding-left: 5px;
+                }
+                .ant-form-item{
+                    display: flex;
+                    margin-bottom: 0;
+                    &.xxs{
+                        .gym-item-input-number{
+                            width: 90px;
+                        }
+                    }
+                }
+                .ant-form-item-label{
+                    min-width: 130px;
+                }
+                .text{
+                    width: 20px;
+                    text-align: center;
+                }
+            }
+            .gym-date-packer {
+                width: auto;
+                .ant-input{
+                    width: 90px;
+                    padding: 5px;
+                }
+            }
+        }
+
+    }
+    &-date-field-part{
+
+        &-title{
+            border-bottom: 1px solid $borderColor;
+            border-top: 1px solid $borderColor;
+
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            &-left{
+                display: flex;
+                align-items: center;
+
+            }
+        }
+        &-content{
+
+        }
+        &-items{
+            display: flex;
+            padding: 10px 20px;
+
+            &-title{
+                color: $themeColor;
+                width: 100px;
+            }
+            &-list{
+
+            }
+        }
+    }
+    &-export-modal{
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            &.block{
+                display: block;
+            }
+
+        }
+    }
+    &-tooltip{
+        max-width: none;
+    }
+    &-typeBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50px;
+        padding: 0 5px;
+        height: 26px;
+        line-height: transRem(26px);
+        text-align: center;
+        background-color: #b2e1eb;
+        color: #fff;
+        border-radius: transRem(15px);
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    &-action-span{
+        display: inline-block;
+        min-width: transRem(100px);
+    }
+}

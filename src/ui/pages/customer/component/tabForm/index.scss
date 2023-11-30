@@ -1,0 +1,77 @@
+@import '@/style/func.scss';
+
+.component-gym-tab-form {
+    .ant-tabs-content {
+        box-shadow: 0 0 3px 3px rgba(56,91,99,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+    .btnWrapper {
+        margin-top: transRem(30px);
+        .prevStep {
+            margin-right:transRem(40px);
+            background-color: white;
+            color: #009CBD;
+        }
+    }
+
+    .ant-tabs.ant-tabs-card {
+      overflow: visible;
+      .ant-tabs-close-x {
+        position: relative;
+        left: 4px;
+        svg {
+          background-color: #cccccc;
+          height: 12px;
+          width: 12px;
+          border-radius:6px;
+          color: white;
+          padding: 2px;
+        }
+      }
+    }
+
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar {
+        margin-bottom: 0px;
+        margin-left: 45px;
+        margin-right: 45px;
+        position: relative;
+        z-index: 0;
+        .ant-tabs-tab {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .ant-tabs-tab-active {
+            background-color: #009CBD;
+            color: white;
+            .ant-tabs-close-x {
+              position: relative;
+              left: 4px;
+              svg {
+                background-color: white;
+                color: #009cbd;
+              }
+            }
+        }
+    }
+
+    .ant-tabs-extra-content {
+      .extra-add {
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #2D3953;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+      }
+    }
+}

@@ -1,0 +1,24 @@
+/**
+ * desc: 每个月第一次登陆提示框
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/8/20
+ * Time: 下午2:08
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+.gym-first-login-modal{
+    &-body{
+        text-align: center;
+        .high-light{
+            color: $themeColor;
+            font-weight: bold;
+            font-size: transRem(16px);
+        }
+        margin-bottom: 15px;
+    }
+    &-footer{
+        text-align: center;
+
+    }
+}

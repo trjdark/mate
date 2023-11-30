@@ -1,0 +1,47 @@
+.not-find-wrap {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(241, 242, 244);
+}
+
+.not-find {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    width: 1200px;
+    height: 650px;
+    margin-top: -325px;
+    margin-left: -600px;
+    background: url("../images/bg.png") no-repeat center / cover;
+}
+.not-find-content {
+    position: absolute;
+    width: 428px;
+    left: 388px;
+    top: 136px;
+    text-align: center;
+    font-size: 14px;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .not-find-tips {
+        margin-top: 7px;
+        line-height: 20px;
+        color: #666666;
+    }
+    .go-home-btn {
+        display: block;
+        margin: 50px auto 0;
+        width: 106px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid;
+        border-radius: 15px;
+        color: #009cbd;
+    }
+}

@@ -1,0 +1,32 @@
+
+
+.reserve-row {
+  display: flex;
+  min-height: 48px;
+  border:1px solid #EBEFF2;
+  border-top: none;
+  box-sizing: border-box;
+
+  .left {
+    width: 150px;
+    padding-left: 20px;
+    background-color: #F4F8FB;
+    display: flex;
+    align-items: center;
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 0px;
+  }
+}
+
+
+.reserve-row-border-top {
+  border-top: 1px solid #EBEFF2;
+}

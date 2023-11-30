@@ -1,0 +1,222 @@
+/**
+ * desc: 任务中心样式
+ * User: Lyon.li@gymboglobal.com
+ * Date: 2018/11/1
+ * Time: 上午10:38
+ */
+@import "../../../../style/func";
+@import "../../../../style/theme";
+
+.gym {
+    &-task-wrap {
+        .ant-tabs {
+            overflow: visible;
+        }
+
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+            border: none;
+            margin: 0;
+
+            .ant-tabs-tab {
+                border: none;
+                background-color: $white;
+                color: $color666;
+                margin-right: transRem(10px);
+                border-radius: transRem(10px) transRem(10px) 0 0;
+                &:hover {
+                    color: $themeColor;
+                }
+            }
+
+            .ant-tabs-tab-active {
+                color: $white;
+                background-color: $themeColor;
+                padding-bottom: 0;
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            .ant-tabs-nav-wrap {
+                padding-left: transRem(45px);
+            }
+        }
+
+        .operate-btn {
+            border-radius: transRem(12px);
+        }
+    }
+
+    &-filter-btn {
+        height: 30px;
+        margin: 5px 10px;
+        border-radius: 15px;
+        border: 1px solid #F1F2F4;
+        color: #999;
+        padding: 0 15px;
+        cursor: pointer;
+        transition: all 0.4s;
+        background-color: transparent;
+        &.active, &:hover{
+            border: 1px solid $themeColor;
+            color: $themeColor;
+            transition: all 0.4s;
+        }
+
+    }
+
+    &-search-form {
+        padding: 15px 15px 0;
+        background: #fbfbfb;
+        border: 1px solid #d9d9d9;
+        border-radius: 6px;
+
+        .ant-form-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .ant-form-item-label {
+            display: block;
+            width: 95px;
+            line-height: normal;
+        }
+        .ant-form-item-control{
+            width: 200px;
+        }
+
+        .ant-form-item {
+            .ant-calendar-range-picker-input {
+                width: 44% !important;
+            }
+        }
+        .ant-form-item-control-wrapper {
+            flex: 1;
+            max-width: 200px;
+            overflow: hidden;
+            input {
+                display: block;
+                width: 100%;
+                margin-top: 5px;
+
+                &.ant-calendar-range-picker-input {
+                    display: inline-block;
+                    width: 115px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &.gym-search-costormer {
+            padding: 5px 5px;
+
+            .ant-form-item-label {
+                width: 4em;
+            }
+
+            .ant-form-item {
+                margin-bottom: 0;
+            }
+        }
+
+        .ant-calendar-picker-input {
+            width: 100%;
+        }
+    }
+
+    &-task-time {
+        .ant-form-item-control-wrapper {
+            max-width: initial;
+            .ant-calendar-picker {
+                width: 100%!important;
+            }
+        }
+    }
+    &-task-execute {
+        .ant-form-item-control-wrapper {
+            max-width: transRem(260px);
+        }
+    }
+
+    &-search-btn-group {
+        padding: 5px 0;
+        margin-left: 90px;
+    }
+    &-system-message{
+
+    }
+}
+
+.gym-datepick-wrap {
+    @extend .gym-search-btn-group;
+    display: flex;
+    align-items: center;
+
+    > span {
+        display: block;
+        width: 5em;
+    }
+}
+
+.gym-datepick {
+    input {
+        max-width: 100%;
+    }
+}
+
+.gym-extra {
+    margin-left: 10px;
+}
+
+.gym-edit-timePicker {
+    margin-left: 10px;
+    width: 115px;
+
+    &.ant-time-picker input {
+        width: 100%;
+    }
+}
+
+.gym-mini-table {
+    .ant-table thead th, .ant-table tbody td {
+        height: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+
+.gym-no-footer-modal {
+    .ant-modal-footer {
+        display: none;
+    }
+}
+
+.gym-center-footer {
+    .ant-modal-footer {
+        text-align: center;
+        border-top: none;
+    }
+}
+.task-round-nav{
+    background: #fff;
+    border-radius: 20px;
+    overflow-Y: auto;
+    padding: 15px 0 15px 15px;
+    box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+    margin: 20px 0;
+}
+.gym-task-wrap{
+    margin-top: 20px;
+    .ant-form-item-label {
+        width: 95px;
+    }
+}
+.page-wrap-taskcenter{
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 0.57692rem;
+    border-radius: 0.76923rem;
+    box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+}
+
+

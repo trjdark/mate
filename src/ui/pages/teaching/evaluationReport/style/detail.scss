@@ -1,0 +1,229 @@
+/**
+ * desc:
+ * User: Vicky
+ * Date: 2020/8/3
+ * Time: 下午3:15
+ */
+@import "../../../../../style/theme";
+@import "../../../../../style/func";
+
+.gym-evaluation-detail{
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        .gobackBtn {
+            margin-left: 5px;
+        }
+    }
+    &-head{
+        margin-bottom: transRem(20px);
+        &-title{
+            text-align: center;
+            font-size: transRem(32px);
+        }
+        &-level{
+            text-align: center;
+        }
+    }
+    &-info{
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item{
+            width: 33%;
+            &-label{
+                display: inline-block;
+                width: transRem(150px);
+                text-align: right;
+                margin-bottom: transRem(10px);
+            }
+            &-content{
+                color: $themeColor;
+            }
+        }
+    }
+    &-photo{
+        margin-bottom: 20px;
+        overflow: hidden;
+        img{
+            width: 104px;
+            height: 104px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+    &-goal{
+        &-table{
+            border: 1px solid $themeColor;
+            border-radius: 5px;
+            border-bottom: none;
+            &-head{
+                padding: 10px 0;
+                background: #004976;
+                border-radius: 5px 5px 0 0;
+                color: #FFF;
+                display: flex;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                }
+                .right-one {
+                    text-align: center;
+                }
+                .right-two{
+                    text-align: center;
+                    border-left: none;
+                    border-right: none;
+
+                }
+                .right-three{
+                    text-align: center;
+                    padding-left:0;
+                }
+            }
+            &-project{
+                border-bottom: 1px solid $themeColor;
+                display: flex;
+                align-items: center;
+                &-title {
+                    width: 10%;
+                    text-align: center;
+                }
+                &-content {
+                    width: 90%;
+                    border-left: 1px solid $themeColor;
+                    &-item{
+                        display: flex;
+                        align-items:center;
+                        border-bottom: 1px solid $themeColor;
+                        &:nth-child(odd) {
+                            background: #E9F6F7;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        &-left{
+                            width: 20%;
+                            padding-left: 15px;
+                        }
+                        &-middle{
+                            width: 60%;
+                            border-left: 1px solid $themeColor;
+                            border-right: 1px solid $themeColor;
+                            padding-left: 15px;
+                            &-target{
+                                margin: 20px 0;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                            }
+                        }
+                        &-right{
+                            width: 20%;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    &-record{
+        margin-top: 20px;
+        padding: 0 0 -1rem 0.16667rem;
+        &-content{
+            margin-left: 20px;
+            margin-top: -10px;
+            word-break: break-all;
+        }
+        &-preview{
+           margin-right: 10px;
+        }
+    }
+    &-modal{
+        &-up{
+            background: linear-gradient(#00CBE0, #009CBD);
+        }
+        &-name{
+            color: #FFF;
+            font-size: 18px;
+            padding: 5px 20px 0;
+        }
+        &-info {
+            display: flex;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 33.33%;
+                padding: 15px 0;
+                &-label {
+                    display: inline-block;
+                    width: transRem(150px);
+                    text-align: right;
+                    margin-bottom: transRem(10px);
+                    color: #FFF;
+                }
+                &-content {
+                    color: #FFF;
+                }
+            }
+        }
+        &-title {
+            text-align: center;
+            margin-top: 10px;
+            color: #004976;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &-level{
+            padding: 24px;
+            .dis{
+                margin: 10px 0 0;
+            }
+            &-sort{
+                color: #004976;
+                font-size: 16px;
+                font-weight: bold;
+                position: relative;
+                span{
+                    position:absolute;
+                    width: 3px;
+                    height: 20px;
+                    display:inline-block;
+                    background: #009CBD;
+                    left: -10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &-project{
+                color: #009cbd;
+            }
+
+        }
+
+    }
+}
+.gym-checkbox{
+    margin-right: 10px;
+}
+.gym-project-checkbox{
+    .ant-checkbox-group-item{
+        display: block;
+    }
+    .gym-project-checkbox{
+        .ant-checkbox-group-item{
+            display: block;
+        }
+    }
+}
+.gym-evaluation-detail-wrapper-modal {
+    .ant-modal-body {
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+

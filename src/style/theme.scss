@@ -1,0 +1,304 @@
+/**
+ * desc: 主题
+ * Date: 2018/8/11
+ * Time: 下午1:36
+ */
+@import "func";
+
+$bgColor: #ffffff;
+$white: #ffffff;
+$themeColor: #009cbd;
+$error: #e9300b;
+$success: #23c46b;
+
+$color333: #333;
+$color666: #666;
+$color999: #999;
+$colorDDD: #dcdcdc;
+$borderColor: #EBEFF2;
+$backgroundColor:#E3F9FF;
+
+$borderRadius: transRem(10px);
+
+#react-container {
+    min-height: 100%;
+    min-width: 1280px;
+}
+
+
+.page-wrap {
+    background: $bgColor;
+    padding: 30px 15px 15px 15px;
+    margin-bottom: transRem(15px);
+    border-radius: transRem(20px);
+    box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+
+    &.no-padding {
+        padding: 0;
+    }
+}
+
+.page-wrap-no-title {
+    background: $bgColor;
+    padding: 15px;
+    margin-bottom: transRem(15px);
+    border-radius: transRem(20px);
+    box-shadow: 0 0 3px 3px rgba(56, 91, 99, 0.1);
+
+    &.no-padding {
+        padding: 0;
+    }
+}
+
+/*常用颜色*/
+.gym-corange, .corange {
+    color: #f60;
+}
+
+.bdGrey {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.cDefault {
+    color: $themeColor;
+}
+.c-error {
+    color: $error;
+};
+.cDDD {
+    color: #cdcdcd;
+}
+
+.c333 {
+    color: #000;
+}
+.c666 {
+    color: #666;
+}
+.c999 {
+    color: #999;
+}
+.c-purple {
+    color: #9932CD;
+}
+.cWhite {
+    color: white;
+}
+.cError{
+    color: $error;
+}
+.gym-warning{
+    color:$error;
+    font-size:18px;
+    margin-right: 4px;
+}
+
+/*常用按钮*/
+.gym-button {
+    &-block {
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    &-xxs {
+        //width: 42px;
+        height: 24px;
+        border-radius: 15px;
+        font-size: 12px;
+        padding: 0 18px;
+    }
+
+    &-lg {
+        min-width: 150px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    &-xs {
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    &-sm {
+        width: 120px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    &-blue { //蓝底
+        background: #2c3952;
+        color: #fff;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+            background: #153778;
+            border: 1px solid #153778;
+            color: #fff;
+        }
+        &:focus{
+            background: #2c3952;
+            color: #fff;
+            border: 1px solid transparent;
+        }
+    }
+
+    &-wBlue { //白底蓝边
+        background: #fff;
+        color: #2c3952;
+        border: 1px solid #2c3952;
+        cursor: pointer;
+        &:hover {
+            color: #153778;
+            border-color: #153778;
+            cursor: pointer;
+        }
+        &:focus {
+            background-color: #fff;
+            color: #2c3952;
+            border: 1px solid #2c3952;
+        }
+    }
+
+    &-white { //白底浅蓝色边
+        background: #fff;
+        color: #009cbd;
+        border: 1px solid #009cbd;
+        cursor: pointer;
+        &:hover {
+            color: #fff;
+            background: #009cbd;
+            border: 1px solid #009cbd;
+        }
+        &:focus {
+            background-color: #fff;
+            color: #009cbd;
+            border: 1px solid #009cbd;
+        }
+    }
+
+    &-default { //常用按钮
+        background: #009cbd;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        &:hover {
+            background: #2dccd3;
+            color:#fff;
+        }
+        &-forbid {
+            background: #b2e1eb;
+        }
+        &:focus {
+          background-color: #009cbd;
+          color: white;
+        }
+
+        //safari 兼容
+        -webkit-appearance: none;
+        border-bottom-width: 0;
+        border-right-width: 0;
+    }
+
+    &-error { //红色按钮
+        background: #da291c;
+        border: none;
+        color: white;
+
+        &:hover {
+            background: #960a00;
+        }
+
+        &:focus {
+            background-color: #da291c;
+            color: white;
+        }
+    }
+
+    &-grey { //灰色按钮
+        background: $colorDDD;
+        color: $white;
+        border: 1px solid $colorDDD;
+        cursor: not-allowed;
+    }
+    &-grey-white { //灰色按钮
+        background: $white;
+        color: $colorDDD;
+        border: 1px solid $colorDDD;
+        cursor: not-allowed;
+    }
+
+    // 灰色背景，白色文字
+    &-greyb {
+        background-color: #b2e1eb;
+        color: #fff;
+        border: none;
+
+        &:hover {
+            background-color: #b2e1eb;
+            cursor: not-allowed;
+            color: #fff;
+        }
+
+        &:focus {
+            background-color: #b2e1eb;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    // 边框虚线
+    &-dashed {
+        border-style: dashed;
+    }
+}
+
+$colorArr: default, blue, wBlue, white, grey, greyb, error;
+$sizeArr: xxs, xs, sm, lg, block;
+@each $btnColor in $colorArr {
+    @each $btnSize in $sizeArr {
+        .gym-button-#{$btnColor}-#{$btnSize} {
+            @extend .gym-button-#{$btnColor};
+            @extend .gym-button-#{$btnSize};
+        }
+    }
+}
+
+
+.gym-search-input {
+    height: 30px;
+    width: transRem(150px);
+    background: #1b2841;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 0 transRem(35px) 0 10px;
+
+    &::placeholder {
+        color: #999;
+    }
+}
+.gym-search-button{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 26px;
+    transition: all 0.3s;
+    &:hover{
+        color: $themeColor;
+        border: 1px solid $themeColor;
+        transition: all 0.3s;
+    }
+}
+.shadow{
+    position:relative;
+    z-index:1;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.ant-form-item-control-wrapper > .has-error > .ant-form-explain {
+    font-size: 12px;
+}
